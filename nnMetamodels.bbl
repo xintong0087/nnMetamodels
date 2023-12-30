@@ -1,0 +1,144 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Carlini and Wagner(2017)]{carlini2017towards}
+Nicholas Carlini and David Wagner.
+\newblock Towards evaluating the robustness of neural networks.
+\newblock In \emph{2017 ieee symposium on security and privacy (sp)}, pages
+  39--57. Ieee, 2017.
+
+\bibitem[Chung et~al.(2014)Chung, Gulcehre, Cho, and
+  Bengio]{chung2014empirical}
+Junyoung Chung, Caglar Gulcehre, Kyunghyun Cho, and Yoshua Bengio.
+\newblock Empirical evaluation of gated recurrent neural networks on sequence
+  modeling.
+\newblock 2014.
+\newblock \url{https://arxiv.org/abs/1412.3555}. Accessed 7$^{\textrm{th}}$ Sep
+  2023.
+
+\bibitem[Goodfellow et~al.(2014)Goodfellow, Shlens, and
+  Szegedy]{goodfellow2014explaining}
+Ian~J Goodfellow, Jonathon Shlens, and Christian Szegedy.
+\newblock Explaining and harnessing adversarial examples.
+\newblock \emph{arXiv preprint arXiv:1412.6572}, 2014.
+\newblock \url{https://arxiv.org/abs/1412.6572}. Accessed 1$^{\textrm{st}}$ Jan
+  2024.
+
+\bibitem[Hastie et~al.(2009)Hastie, Tibshirani, and
+  Friedman]{hastie2009elements}
+Trevor Hastie, Robert Tibshirani, and Jerome~H Friedman.
+\newblock \emph{The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}, volume~2.
+\newblock Springer, 2009.
+
+\bibitem[Hochreiter and Schmidhuber(1997)]{hochreiter1997long}
+Sepp Hochreiter and J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock \emph{Neural Computation}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
+
+\bibitem[Jiang et~al.(2020)Jiang, Huang, Liu, and Yang]{jiang2020beyond}
+Lu~Jiang, Di~Huang, Mason Liu, and Weilong Yang.
+\newblock Beyond synthetic noise: Deep learning on controlled noisy labels.
+\newblock In \emph{International conference on machine learning}, pages
+  4804--4815. PMLR, 2020.
+
+\bibitem[LeCun et~al.(2015)LeCun, Bengio, and Hinton]{lecun2015deep}
+Yann LeCun, Yoshua Bengio, and Geoffrey~E Hinton.
+\newblock Deep learning.
+\newblock \emph{Nature}, 521\penalty0 (7553):\penalty0 436--444, 2015.
+
+\bibitem[Luo et~al.(2016)Luo, Li, Urtasun, and Zemel]{luo2016understanding}
+Wenjie Luo, Yujia Li, Raquel Urtasun, and Richard Zemel.
+\newblock Understanding the effective receptive field in deep convolutional
+  neural networks.
+\newblock \emph{Advances in Neural Information Processing Systems}, 29, 2016.
+
+\bibitem[McCulloch and Pitts(1943)]{mcculloch1943logical}
+Warren~S McCulloch and Walter Pitts.
+\newblock A logical calculus of the ideas immanent in nervous activity.
+\newblock \emph{The Bulletin of Mathematical Biophysics}, 5:\penalty0 115--133,
+  1943.
+
+\bibitem[Neelakantan et~al.(2015)Neelakantan, Vilnis, Le, Sutskever, Kaiser,
+  Kurach, and Martens]{neelakantan2015adding}
+Arvind Neelakantan, Luke Vilnis, Quoc~V Le, Ilya Sutskever, Lukasz Kaiser,
+  Karol Kurach, and James Martens.
+\newblock Adding gradient noise improves learning for very deep networks.
+\newblock \emph{arXiv preprint arXiv:1511.06807}, 2015.
+\newblock \url{https://arxiv.org/abs/1511.06807}. Accessed 1$^{\textrm{st}}$
+  Jan 2024.
+
+\bibitem[OpenAI(2023)]{chatgpt}
+OpenAI.
+\newblock Chatgpt, 2023.
+\newblock \url{https://chat.openai.com/chat}. Accessed 7$^{\textrm{th}}$ Sep
+  2023.
+
+\bibitem[Poole et~al.(2014)Poole, Sohl-Dickstein, and
+  Ganguli]{poole2014analyzing}
+Ben Poole, Jascha Sohl-Dickstein, and Surya Ganguli.
+\newblock Analyzing noise in autoencoders and deep networks.
+\newblock \emph{arXiv preprint arXiv:1406.1831}, 2014.
+\newblock \url{https://arxiv.org/abs/1406.1831}. Accessed 1$^{\textrm{st}}$ Jan
+  2024.
+
+\bibitem[Rosenblatt(1958)]{rosenblatt1958perceptron}
+Frank Rosenblatt.
+\newblock The perceptron: A probabilistic model for information storage and
+  organization in the brain.
+\newblock \emph{Psychological Review}, 65\penalty0 (6):\penalty0 386, 1958.
+
+\bibitem[Rumelhart et~al.(1985)Rumelhart, Hinton, and
+  Williams]{rumelhart1985learning}
+David~E Rumelhart, Geoffrey~E Hinton, and Ronald~J Williams.
+\newblock Learning internal representations by error propagation.
+\newblock Technical report, California University San Diego La Jolla Institute
+  for Cognitive Science, 1985.
+
+\bibitem[Silver et~al.(2016)Silver, Huang, Maddison, Guez, Sifre, Van
+  Den~Driessche, Schrittwieser, Antonoglou, Panneershelvam, Lanctot,
+  et~al.]{silver2016mastering}
+David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George
+  Van Den~Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda
+  Panneershelvam, Marc Lanctot, et~al.
+\newblock Mastering the game of go with deep neural networks and tree search.
+\newblock \emph{Nature}, 529\penalty0 (7587):\penalty0 484--489, 2016.
+
+\bibitem[Srivastava et~al.(2014)Srivastava, Hinton, Krizhevsky, Sutskever, and
+  Salakhutdinov]{srivastava2014dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
+  Salakhutdinov.
+\newblock Dropout: A simple way to prevent neural networks from overfitting.
+\newblock \emph{The Journal of Machine Learning Research}, 15\penalty0
+  (1):\penalty0 1929--1958, 2014.
+
+\bibitem[Sutskever et~al.(2014)Sutskever, Vinyals, and
+  Le]{sutskever2014sequence}
+Ilya Sutskever, Oriol Vinyals, and Quoc~V Le.
+\newblock Sequence to sequence learning with neural networks.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~Lawrence, and K.Q.
+  Weinberger, editors, \emph{Advances in Neural Information Processing
+  Systems}, volume~27. Curran Associates, Inc., 2014.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper\_files/paper/2014/file/a14ac55a4f27472c5d894ec1c3c743d2-Paper.pdf}.
+
+\bibitem[Szegedy et~al.(2013)Szegedy, Zaremba, Sutskever, Bruna, Erhan,
+  Goodfellow, and Fergus]{szegedy2013intriguing}
+Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan,
+  Ian Goodfellow, and Rob Fergus.
+\newblock Intriguing properties of neural networks.
+\newblock \emph{arXiv preprint arXiv:1312.6199}, 2013.
+\newblock \url{https://arxiv.org/abs/1312.6199}. Accessed 1$^{\textrm{st}}$ Jan
+  2024.
+
+\bibitem[Williams and Zipser(1989)]{williams1989learning}
+Ronald~J Williams and David Zipser.
+\newblock A learning algorithm for continually running fully recurrent neural
+  networks.
+\newblock \emph{Neural Computation}, 1\penalty0 (2):\penalty0 270--280, 1989.
+
+\end{thebibliography}

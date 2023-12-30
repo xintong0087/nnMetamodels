@@ -1,0 +1,107 @@
+\documentclass[]{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{inputenc}
+\usepackage{amsmath, amsfonts, eucal, bbold}
+\usepackage[round]{natbib}
+\usepackage{amssymb}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{bm,enumitem}
+\usepackage{makecell}
+\usepackage{booktabs}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newtheorem{definition}{Definition} 
+\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+
+\newcommand{\VaR}{\mbox{VaR}}
+\newcommand{\CVaR}{\mbox{CVaR}}
+\newcommand{\tail}{\mathcal{T}}
+\newcommand{\bS}{\bm{S}}
+\newcommand{\bStilde}{\widetilde{\bm{S}}}
+\newcommand{\Stilde}{\widetilde{S}}
+\newcommand{\Itilde}{\widetilde{I}}
+\newcommand{\Ftilde}{\widetilde{F}}
+\newcommand{\Gtilde}{\widetilde{G}}
+\newcommand{\Vhat}{\widehat{V}}
+\newcommand{\Lhat}{\widehat{L}}
+\newcommand{\Deltahat}{\widehat{\Delta}}
+
+\title{Cutting Through the Noise: Using Deep Neural Network Metamodels for High Dimensional Nested Simulation}
+\author{Tony Wirjanto \and Mingbin Feng \and Xintong Li}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+
+Deep neural network models have gained great success in many applications, but their adoption in financial and actuarial applications has been received by regulators with some trepidation.
+The lack of transparency and interpretability of these models leads to skepticism about their resilience and reliability, which are important factors to ensure financial stability and insurance benefit fulfillment.
+In this study, we use stochastic simulation as a data generator to examine neural network models under controlled settings.
+Our study shows interesting findings in fundamental questions like ``What do neural network models learn from noisy data?'' and ``How well do they learn from noisy data?'', and the findings provides justifications for using deep neural networks in actuarial applications.
+Based on our findings, we propose an efficient nested simulation procedure that uses neural network models as metamodels to estimate risk measures of hedging errors for variable annuities.
+The proposed procedures use neural networks as metamodels to provide accurate loss predictions and concentrate simulation budget on tail scenarios while maintaining transparency in the estimation step, and we provide practical guidelines to extend our generic procedures for other financial and actuarial applications.
+
+\section{Introduction}
+
+Deep neural networks~\citep{hastie2009elements,lecun2015deep} have attracted attentions of researchers and practitioners due to their success in solving real-world supervised learning tasks such as AlphaGo~\citep{silver2016mastering} and ChatGPT~\citep{chatgpt}.
+Since the first artificial neural network model~\citep{mcculloch1943logical} and the first algorithm for training a perceptron~\citep{rosenblatt1958perceptron}, especially after the introduction of backpropagation~\citep{rumelhart1985learning} and the growth of high-performance computing, the field of artificial neural network and deep learning in general has grown rapidly.
+Two specialized neural network architectures that are relevant to our study are recurrent neural networks (RNNs)~\citep{williams1989learning,sutskever2014sequence} and long-short-term memory (LSTM)~\citep{hochreiter1997long,chung2014empirical}, as we need to train metamodels that take sequential observations as input.
+Despite their success, deep neural network models are often criticized for their lack of transparency and interpretability, which hinders their adoption in financial and actuarial applications.
+Enormous research efforts are spent to test and improve the robustness of neural network models with carefully designed noise injection methods.
+~\cite{poole2014analyzing} show that injecting synthetic noise before and after hidden unit activations during training improves the performance of autoencoders.
+~\cite{neelakantan2015adding} improve learning for deep neural networks by injecting synthetic noise to the gradients during backpropagations.
+A branch of research has been devoted to understanding the resilience of neural network models to noise in training labels.
+For example,~\cite{luo2016understanding} show that adding synthetic label noise to the convolutional neural network(CNN) can improve its ability to capture global features. 
+~\cite{srivastava2014dropout} quantify the error tolerance by injecting synthetic label noise with a custom Boltzmann machine hardware.
+~\cite{szegedy2013intriguing} find that neural networks are vulnerable to adversarial examples, and~\cite{goodfellow2014explaining} design an efficient method to generate such noisy examples to exploit the vulnerability to adversarial perturbations.
+~\cite{carlini2017towards} design targeted attacks to training labels to test the robustness of neural networks. 
+Instead of using synthetic noise, ~\cite{jiang2020beyond} inject real-world label noise and examine noise tolerance of neural networks with controlled noise levels.
+The aforementioned studies use real-world data, as is typically the case for many neural network studies, where noise is already present in the training labels before any noise injection.
+Users of real-world data have little control over the noise level of the original training labels and usually examine the effect of noisy data by injecting noise, but it is unclear whether the neural network model trained on noisy data actually learns the real, i.e., noiseless, feature-label relationship.
+Due to their lack of transparency and interpretability, the adoption of neural networks in financial and actuarial applications has been received by regulators with some skepticism.
+
+The contributions of our study are two-fold:
+\begin{enumerate}
+    \item We study what neural networks learn from noisy data by training them using simulated data based on well-designed simulation experiments.
+    This is a novel way to study the effect of noisy data and error tolerance of neural network models as one can \textit{reduce noise} in the data by increasing the number of replications in a simulation model.
+    This new way of studying neural network models can provide more direct evidence on their transparency and interpretability.  
+    \item We propose two generic nested simulation procedures that uses neural networks as metamodels to improve its efficiency while maintaining transparency. 
+    In essence, a pilot stage simulation is used to generate a large number of noisy data, which are then used to train a neural network metamodel.
+    Depending on the application, the trained metamodel can serve two purposes: (1) to identify a set of tail scenarios, and (2) to estimate risk measures directly.
+    The first procedure uses a neural network to identify a set of potential tail scenarios on which computations are performed in the second stage, while the second procedure uses neural network predictions to estimate risk measures directly.
+    Our numerical results show that neural network metamodels can identify the tail scenarios accurately and so the proposed procedures can estimate tail risk measures with similar accuracy while, at the same time,using less simulation budget.
+\end{enumerate}
+
+We are curious about fundamental questions like ``What do deep neural networks learn from noisy data?'' and ``How well do neural networks learn from noisy data?''.
+Data-driven answers to these questions prevail in the existing literature.
+In supervised learning, deep neural networks are believed to learn from the given data about the feature-label relationship to predict new labels for unseen features.
+Cross validation using to assess a subset, i.e., the validation set, of the original data, is a common way to access the quality of learning.
+Generalization error on the test labels is another popular assessment metric.
+But the test set is also a subset of the original data.
+In this study, we revisit these questions in a simulation setting and propose an alternative approach to answer them.
+Instead of relying solely on real-data (splitting it into multiple subsets), we propose using stochastic simulation outputs as training data for deep learning models.
+By controlling the simulation design parameters, such as the number of independent replications, we can control the quality (and also the quantity) of the training labels fed into the deep learning model.
+In such a controlled environment, we obtain more clear-cut answers to the above fundamental questions.
+Borrowing terminologies from machine learning research, we can view a set of simulated outer scenarios and the estimated hedging errors for those scenarios as the \textit{features} and (noisy) \textit{labels}.
+One can train supervised learning models using these simulated features and labels.
+They are then used to replace the time-consuming inner simulations by the trained model.
+We refer to the trained supervised learning models as \textit{metamodels} of the inner simulation.
+
+The metamodelling approach is prevalent in the simulation literature. 
+
+
+
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{refP2}
+
+
+
+\end{document}
