@@ -76,7 +76,7 @@ The contributions of our study are two-fold:
     In essence, a pilot stage simulation is used to generate a large number of noisy data, which are then used to train a neural network metamodel.
     Depending on the application, the trained metamodel can serve two purposes: (1) to identify a set of tail scenarios, and (2) to estimate risk measures directly.
     The first procedure uses a neural network to identify a set of potential tail scenarios on which computations are performed in the second stage, while the second procedure uses neural network predictions to estimate risk measures directly.
-    Our numerical results show that neural network metamodels can identify the tail scenarios accurately and so the proposed procedures can estimate tail risk measures with similar accuracy while, at the same time,using less simulation budget.
+    Our numerical results show that neural network metamodels can identify the tail scenarios accurately and so the proposed procedures can estimate tail risk measures with similar accuracy while, at the same time, using less simulation budget.
 \end{enumerate}
 
 We are curious about fundamental questions like ``What do deep neural networks learn from noisy data?'' and ``How well do neural networks learn from noisy data?''.
@@ -85,17 +85,47 @@ In supervised learning, deep neural networks are believed to learn from the give
 Cross validation using to assess a subset, i.e., the validation set, of the original data, is a common way to access the quality of learning.
 Generalization error on the test labels is another popular assessment metric.
 But the test set is also a subset of the original data.
-In this study, we revisit these questions in a simulation setting and propose an alternative approach to answer them.
-Instead of relying solely on real-data (splitting it into multiple subsets), we propose using stochastic simulation outputs as training data for deep learning models.
-By controlling the simulation design parameters, such as the number of independent replications, we can control the quality (and also the quantity) of the training labels fed into the deep learning model.
+In this study, we revisit these questions in a simulation context and propose an alternative approach to answer them.
+Instead of relying solely on real-data (splitting it into multiple subsets), we propose using stochastic simulation outputs as training labels for deep neural network models.
+By controlling the simulation design parameters, such as the number of independent replications, we can control the quality (and also the quantity) of the training labels fed into the neural networks.
 In such a controlled environment, we obtain more clear-cut answers to the above fundamental questions.
+
+In nested simulation, a simulation model is used to generate a large number of outer scenarios, and each scenario is then used as an input to another simulation model.
 Borrowing terminologies from machine learning research, we can view a set of simulated outer scenarios and the estimated hedging errors for those scenarios as the \textit{features} and (noisy) \textit{labels}.
 One can train supervised learning models using these simulated features and labels.
 They are then used to replace the time-consuming inner simulations by the trained model.
-We refer to the trained supervised learning models as \textit{metamodels} of the inner simulation.
+We refer to the trained supervised learning models as \textit{metamodels} of the inner simulation, which is also known as the \textit{surrogate models}.
+Metamodeling is a popular approach to reduce the computational burden of simulation-based applications by replacing the time-consuming simulation with a metamodel.
+The metamodel is trained using a set of simulated data, and it is used to predict the simulation output for new inputs.
+The study of metamodeling is an active research area in the simulation literature, and using deep neural networks as metamodels is a relatively new development.
+~\cite{lieu2022adaptive} use deep neural networks as metamodels of a simulation model for structural reliability analysis, and~\cite{salle2014efficient} show that neural network metamodels help achieve higher prediction accuracy that other metamodels in approximating agent-based simulation models.
+A popular metamodel in nested simulation procedures is stochastic kriging.
+~\cite{liu2010stochastic} use stochastic kriging as a metamodel of Monte Carlo simulations to estimate the conditional value at risk (CVaR) of a portfolio of derivative securities, and~\cite{gan2015valuation} use stochastic kriging for an efficient valuation of large portfolios of variable annuity (VA) contracts.
+Other studies, such as ~\cite{broadie2015risk},~\cite{hong2017kernel}, and~\cite{zhang2022sample} use regression, kernel smoothing, and the likelihood ratio method, respectively.
+Our proposal has two key distinctions over the existing ones:
+\begin{enumerate}
+    \item  our metamodel has high-dimensional inputs. In machine learning terminology, the features are high-dimensional vectors.
+    To estimate the hedging error of a typical VA contract, the number of features is in the order of hundreds, which is at least one order of magnitude larger than the number of features in the aforementioned studies, and
+    \item  for estimating tail risk measures, our metamodel is only used for tail scenario identification but is \textit{not} used in the estimation of the tail risk measures.
+    This is a feature designed particularly to convince regulators that the losses used in estimating the risk measure are based on a transparent inner simulation model rather than on some black-box metamodels.
+\end{enumerate}
 
-The metamodelling approach is prevalent in the simulation literature. 
+The rest of this article is organized as follows: 
+Section~\ref{sec:problem-formulation} presents the problem settings for tail risk measures and dynamic hedging of VAs. 
+Section~\ref{sec:metamodel2Stage} proposes an efficient two-stage nested simulation procedure that uses machine learning models as metamodels to help reduce simulation budget by only performing computations on identified tail scenarios. 
+Section~\ref{sec:metamodel1Stage} proposes a one-stage nested simulation procedure that estimates risk measures directly with metamodel predictions.
+Section~\ref{sec:numerical} demonstrates the efficiency of deep learning proxies and examines error tolerance of two LSTM proxy models with different numbers of trainable parameters. 
+Practical suggestions are provided for the choice of suitable metamodels and simulation settings. 
 
+\section{Problem Formulation} \label{sec:problem-formulation}
+
+\section{Two-Stage Nested Simulation with Deep Neural Network Metamodels} \label{sec:metamodel2Stage}
+
+\section{One-Stage Nested Simulation with Deep Neural Network Metamodels} \label{sec:metamodel1Stage}
+
+\section{Numerical Results} \label{sec:numerical}
+
+\section{Conclusion} \label{sec:conclusion}
 
 
 \newpage
