@@ -102,12 +102,14 @@ The study of metamodeling is an active research area in the simulation literatur
 A popular metamodel in nested simulation procedures is stochastic kriging.
 ~\cite{liu2010stochastic} use stochastic kriging as a metamodel of Monte Carlo simulations to estimate the conditional value at risk (CVaR) of a portfolio of derivative securities, and~\cite{gan2015valuation} use stochastic kriging for an efficient valuation of large portfolios of variable annuity (VA) contracts.
 Other studies, such as ~\cite{broadie2015risk},~\cite{hong2017kernel}, and~\cite{zhang2022sample} use regression, kernel smoothing, and the likelihood ratio method, respectively.
-Our proposal has two key distinctions over the existing ones:
+Our study has three key distinctions over the existing ones:
 \begin{enumerate}
     \item  our metamodel has high-dimensional inputs. In machine learning terminology, the features are high-dimensional vectors.
-    To estimate the hedging error of a typical VA contract, the number of features is in the order of hundreds, which is at least one order of magnitude larger than the number of features in the aforementioned studies, and
+    To estimate the hedging error of a typical VA contract, the number of features is in the order of hundreds, which is at least one order of magnitude larger than the number of features in the aforementioned studies,
     \item  for estimating tail risk measures, our metamodel is only used for tail scenario identification but is \textit{not} used in the estimation of the tail risk measures.
-    This is a feature designed particularly to convince regulators that the losses used in estimating the risk measure are based on a transparent inner simulation model rather than on some black-box metamodels.
+    This is a feature designed particularly to convince regulators that the losses used in estimating the risk measure are based on a transparent inner simulation model rather than on some black-box metamodels, and
+    \item  using simulation models as data generators, we can decrease the noise level and get arbitrarily close to the true labels by increasing the number of replications in the simulation model.
+    This design allows a systematic study of the effect of noisy training labels on the performance of neural network models in predicting the noiseless labels.
 \end{enumerate}
 
 The rest of this article is organized as follows: 
