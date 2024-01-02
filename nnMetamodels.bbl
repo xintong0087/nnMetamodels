@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -56,6 +56,13 @@ EIOPA.
 \newblock Technical report, The European Insurance and Occupational Pensions
   Authority, 2014.
 
+\bibitem[Fonseca et~al.(2003)Fonseca, Navaresse, and
+  Moynihan]{fonseca2003simulation}
+Daniel~J Fonseca, Daniel~O Navaresse, and Gary~P Moynihan.
+\newblock Simulation metamodeling through artificial neural networks.
+\newblock \emph{Engineering applications of artificial intelligence},
+  16\penalty0 (3):\penalty0 177--183, 2003.
+
 \bibitem[Gan and Lin(2015)]{gan2015valuation}
 Guojun Gan and Sheldon~X Lin.
 \newblock Valuation of large variable annuity portfolios under nested
@@ -105,6 +112,13 @@ Lu~Jiang, Di~Huang, Mason Liu, and Weilong Yang.
 \newblock Beyond synthetic noise: Deep learning on controlled noisy labels.
 \newblock In \emph{International conference on machine learning}, pages
   4804--4815. PMLR, 2020.
+
+\bibitem[Kingma and Ba(2014)]{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}, 2014.
+\newblock \url{https://arxiv.org/pdf/1412.6980.pdf}. Accessed 7$^{\textrm{th}}$
+  Sep 2023.
 
 \bibitem[LeCun et~al.(2015)LeCun, Bengio, and Hinton]{lecun2015deep}
 Yann LeCun, Yoshua Bengio, and Geoffrey~E Hinton.

@@ -8,45 +8,45 @@ Database file #1: refP2.bib
 Warning--empty booktitle in chung2014empirical
 Warning--empty institution in geneva2013variable
 Warning--empty journal in zhang2022sample
-You've used 35 entries,
+You've used 37 entries,
             2773 wiz_defined-function locations,
-            810 strings with 11932 characters,
-and the built_in function-call counts, 16459 in all, are:
-= -- 1442
-> -- 1068
-< -- 22
-+ -- 361
-- -- 326
-* -- 1365
-:= -- 2606
-add.period$ -- 117
-call.type$ -- 35
-change.case$ -- 212
-chr.to.int$ -- 35
-cite$ -- 73
-duplicate$ -- 713
-empty$ -- 1260
-format.name$ -- 377
-if$ -- 3385
+            821 strings with 12331 characters,
+and the built_in function-call counts, 17337 in all, are:
+= -- 1522
+> -- 1119
+< -- 23
++ -- 378
+- -- 341
+* -- 1436
+:= -- 2743
+add.period$ -- 124
+call.type$ -- 37
+change.case$ -- 223
+chr.to.int$ -- 37
+cite$ -- 77
+duplicate$ -- 753
+empty$ -- 1331
+format.name$ -- 396
+if$ -- 3567
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 32
-newline$ -- 192
-num.names$ -- 142
-pop$ -- 398
+missing$ -- 34
+newline$ -- 203
+num.names$ -- 150
+pop$ -- 417
 preamble$ -- 1
-purify$ -- 176
+purify$ -- 185
 quote$ -- 0
-skip$ -- 557
+skip$ -- 588
 stack$ -- 0
-substring$ -- 513
-swap$ -- 55
+substring$ -- 542
+swap$ -- 57
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 370
+type$ -- 392
 warning$ -- 3
-while$ -- 141
+while$ -- 149
 width$ -- 0
-write$ -- 474
+write$ -- 501
 (There were 3 warnings)
