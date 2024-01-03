@@ -358,7 +358,20 @@ In the numerical experiments, we examine the relationship between the safety mar
 
 In our numerical experiment of the two-stage procedure, we observe that a suitable metamodel trained with noisy labels is accurate enough to identify true tail scenarios with a relatively small safety margin.
 This observation motivates us to propose a one-stage procedure that uses the same neural network metamodel to estimate the CVaR directly with the predicted losses. 
+An overview of the single-stage procedure is as follows:
 
+\begin{itemize}
+    \item[I.] \textbf{Train a neural network metamodel using simulation data.}
+    \begin{itemize}[leftmargin=0pt]
+        \item 
+    \end{itemize}
+    \item[II.] \textbf{Estimate CVaR using predicted losses.}
+    \begin{itemize}[leftmargin=0pt]
+        
+        \item Run Steps 2 and 3 of the standard procedure with the same number of inner replications, $N$,
+    \end{itemize}
+        
+\end{itemize}
 \section{Numerical Results} \label{sec:numerical}
 
 We conduct a series of simulation experiments to (1) demonstrate the efficiency of the proposed metamodeling procedures and (2) examine the error tolerance to noisy training data in deep learning models.
@@ -372,14 +385,14 @@ The risk-free rate is 0.2\% per period and the underlying asset $S_t$ is modeled
 
 To compare the numerical performances of different simulation procedures, we create a benchmark dataset with a large-scale nested simulation: We first simulate $M=100\!,\!000$ outer scenarios, i.e., $240$-periods stock paths $\bS^{(1)},\ldots,\bS^{(M)}$ under $\mathbb{P}$ and used these outer scenarios in all further experiments.
 Note that the 5\% tail scenario set includes $5\!,\!000$ scenarios.
-As the hedging loss for these scenarios cannot be calculated analytically, we run inner simulations with a large number of replications, $N=100\!,\!000$, conditional on each of the $M$ scenarios.
+As the hedging losses for these scenarios cannot be calculated analytically, we run inner simulations with a large number of replications, $N=100\!,\!000$, conditional on each of the $M$ scenarios.
 We denote these losses by $L_1,\ldots,L_M$ and will refer to them as \textit{true losses}.
 We also use these true losses to estimate $\widehat{\CVaR}_{95\%}$ and denote the corresponding \textit{true tail scenario set} by $\tail_{5000}$.
 Lastly, we refer to the set of feature-label pairs $\{(\bS^{(i)}, L_i): i=1,\ldots,M\}$ as a \textit{true dataset}.
 Note that the feature vector $\bS$ is a 240-dimension stock path.
 
 We compare our two-stage procedure to a standard nested simulation procedure that runs $N=1\!,\!000$ inner replications for each of the $M=100\!,\!000$ outer scenarios.
-In Stage I of the proposed procedure, we first running inner simulations with $N'=100$ inner replications for each of the $M=100\!,\!000$ outer scenarios.
+In Stage I of the proposed procedure, we first run inner simulations with $N'=100$ inner replications for each of the $M=100\!,\!000$ outer scenarios.
 So, Stage I's simulation budget is $10\%$ of the standard procedure's.
 The resulting feature-label pairs $\{(\bS^{(i)}, \Lhat_i): i=1,\ldots,M\}$ is used for training different  metamodels.
 Specifically, following the convention in machine learning research, we split this dataset into three parts: The training, validation, and test sets have $90\!,\!000$, $5\!,\!000$, and $5\!,\!000$ data points (90\%, 5\%, and 5\% of the dataset), respectively.
@@ -390,7 +403,7 @@ In short, the two-stage procedure uses $15\% - 30\%$ of the standard procedure's
 
 Five metamodels are considered in this experiment: multiple linear regression (MLR), quadratic polynomial regression (QPR) without interaction terms, feed-forward neural network (FNN), recurrent neural network (RNN), and long short-term memory (LSTM) network.
 MLR and QPR are considered as extensions of regression metamodels in the nested simulation literature.
-FNN is a generic deep learning model while RNN and LSTM are specialized models to accommodate the sequential structure of our time-series features.
+FNN is a generic neural network while RNN and LSTM are specialized models to accommodate the sequential structure of our time-series features.
 A $\tanh$ activation function is used for RNN and LSTM layers, and a Rectified Linear Unit (ReLU) activation function is used for the fully-connected layers.
 All neural network metamodels are trained by the Adam optimizer~\citep{kingma2014adam} with an initial learning rate of $0.001$ and an exponential learning rate decay schedule.
 FNN is trained with a dropout rate of 20\%.
@@ -403,27 +416,49 @@ In machine-learning terminologies, the three deep neural network models have muc
 
 \begin{table}[ht!]
     \small
-        \centering
-        \begin{tabular}{lccccccc}
-            \toprule
-            \textbf{Model} & \textbf{\makecell{Layer size}} & \textbf{\makecell{\# parameters}} & \textbf{Training errors} & \textbf{Test errors} & \textbf{True errors}\\
-            \midrule
-            MLR     & N/A                       & 241          & $0.7075$ & $0.6885$ & $0.6932$ \\
-            QPR     & N/A                       & 481          & $0.5415$ & $0.5411$ & $0.5294$ \\
-            FNN     & $240, 128, 16$            & $35\!,\!009$ & $0.2119$ & $0.3053$ & $0.2089$ \\
-            RNN     & $(240, 32), (240, 4), 32$ & $32\!,\!021$ & $0.1264$ & $0.1702$ & $0.1198$ \\
-            LSTM    & $(240, 32), (240, 4), 32$ & $35\!,\!729$ & $0.0902$ & $0.0958$ & $0.0789$ \\
-            \bottomrule
-        \end{tabular}
-        \caption{Architectures and MSEs of proxy models for GMWB dynamic hedging losses.}
-        \label{tab:gmwb_arch}
-    \end{table}
+    \centering
+    \begin{tabular}{lccccccc}
+        \toprule
+        \textbf{Model} & \textbf{\makecell{Layer size}} & \textbf{\makecell{\# parameters}} & \textbf{Training errors} & \textbf{Test errors} & \textbf{True errors}\\
+        \midrule
+        MLR     & N/A                       & 241          & $0.7075$ & $0.6885$ & $0.6932$ \\
+        QPR     & N/A                       & 481          & $0.5415$ & $0.5411$ & $0.5294$ \\
+        FNN     & $240, 128, 16$            & $35\!,\!009$ & $0.2119$ & $0.3053$ & $0.2089$ \\
+        RNN     & $(240, 32), (240, 4), 32$ & $32\!,\!021$ & $0.1264$ & $0.1702$ & $0.1198$ \\
+        LSTM    & $(240, 32), (240, 4), 32$ & $35\!,\!729$ & $0.0902$ & $0.0958$ & $0.0789$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Architectures and MSEs of metamodels for GMWB inner simulation model.}
+    \label{tab:gmwb_arch}
+\end{table}
+
+The last three columns in Table~\ref{tab:gmwb_arch} display the average squared errors between the predicted losses and the losses (labels) in different datasets.
+We first observe that the two regression metamodels' errors are larger than those of three deep neural network models.
+This is because model capacities of the regression metamodels are too low to learn the complex dynamic hedging simulation model.
+There are also differences among the three deep neural network models.
+The FNN is a generic neural network, its test error is larger than the training error, which is a sign of over-fitting and poor generalization.
+In contrast, RNN and LSTM are networks designed to capture temporal relationship in the high-dimensional feature.
+As a result, they have lower training errors, i.e., they fit the data better, and have lower testing error, i.e., they generalize better.
+Notably, the true errors for the deep neural network metamodels are lower than the test errors.
+Recall that all three data sets are generated from the same simulation model, but the true data set is less noisy than the training and test data.
+Part of the test error is due to simulation noise, and this noise is lower in the true error.
+We observe that the two regression metamodels not only generalize to the test data poorly but also generalize to the true data poorly.
+In contrast, the deep neural network metamodels generalize better to the true data than to the test data.
+This implies that these models indeed learn the true feature-label relationship in the dynamic hedging simulation model (i.e., true data) even though they are trained on noisy observations (e.g., training data) of the model.
+      
+\subsection{Two-Stage Procedure}
+
+\subsection{One-Stage Procedure}
 
 \section{Conclusion} \label{sec:conclusion}
+The proposed nested simulation procedures with deep neural network metamodels result in substantial computational savings in estimating CVaR of the hedging loss of a VA contract from accurately predicting the hedging losses and identifying the tail scenarios.
+An LSTM trained with noisy training labels is able to cut through the noise and learn the true complex dynamic hedging model.
+When new outer scenarios are generated, a trained metamodel can distinguish between tail and non-tail scenarios and make accurate predictions without the need to run new inner simulations.
 
 
 \newpage
 \bibliographystyle{plainnat}
+\footnotesize
 \bibliography{refP2}
 
 
