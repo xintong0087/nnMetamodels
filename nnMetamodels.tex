@@ -470,6 +470,7 @@ In machine-learning terminologies, the three deep neural network models have muc
 \end{table}
 
 The last three columns in Table~\ref{tab:gmwb_arch} display the average squared errors between the predicted losses and the losses (labels) in different datasets.
+The standard errors of these quantities are also reported in parentheses.
 We first observe that the two regression metamodels' errors are larger than those of three deep neural network models.
 This is because model capacities of the regression metamodels are too low to learn the complex dynamic hedging simulation model.
 There are also differences among the three deep neural network models.
@@ -484,10 +485,10 @@ In contrast, the deep neural network metamodels generalize better to the true da
 This implies that these models indeed learn the true feature-label relationship in the dynamic hedging simulation model (i.e., true data) even though they are trained on noisy observations (e.g., training data) of the model.
       
 From a unique analytical standpoint regarding the numerical results, our study offers a methodical exploration into the robustness of deep neural network models against noise in training labels. 
-By employing the standard nested simulation procedure in Algorithm~\ref{alg:standardProcedure} as a data generator, we gain the ability to manipulate the noise level through the adjustment of the number of inner replications while keeping the same simulation procedure.
+By employing the standard nested simulation procedure in Algorithm~\ref{alg:standardProcedure} as a data generator, we gain the ability to manipulate the noise level through adjusting the number of inner replications while keeping the same simulation procedure.
 As a result, this approach provides a controlled environment to examine the impact of label noise on neural network model.
 It allows us to generate our true dataset that approximates the true hedging losses with a high degree of precision, and, as a result, it enables us to explore the crucial question of whether deep learning models are capable of learning the true feature-label relationship from noisy training labels.
-Our numerical results in Table~\ref{tab:gmwb_arch} provide strong evidence that deep neural network models are indeed able to cut through the noise in the training labels and learn the true feature-label relationship.
+Our numerical results in Table~\ref{tab:gmwb_arch} provide direct evidence that deep neural network models are indeed able to cut through the noise in the training labels and learn the true feature-label relationship.
 
 \subsection{Two-Stage Procedure}
 
@@ -498,7 +499,7 @@ The proposed nested simulation procedures with deep neural network metamodels re
 When new outer scenarios are generated, a trained LSTM metamodel can distinguish between tail and non-tail scenarios and make accurate predictions without the need to run new inner simulations.
 Our novel experiment design allows us to examine the impact of label noise on deep neural network models.
 We find that a deep neural network with a suitable architecture is able to cut through the noise in training labels and learn the true complex dynamic hedging model.
-By showcasing the resilience of these models, our study aims to influence regulatory bodies towards recognizing the value and applicability of deep learning metamodels in financial risk management, and it provide informed suggestions and guidance for the incorporation and oversight of advanced deep learning metamodel in Monte Carlo Simulation in financial applications.
+By showcasing the resilience of these models, our study aims to influence regulatory bodies towards recognizing the value and applicability of deep learning metamodels in financial risk management, and it provides informed suggestions and guidance for the incorporation and oversight of advanced deep learning metamodel in Monte Carlo Simulation in financial applications.
 Our findings are particularly insightful in this context.
 In our numerical experiments, a LSTM metamodel is resilient to a high level of noise in training labels and is able to make accurate predictions. 
 

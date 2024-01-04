@@ -8,92 +8,69 @@
 \bibitem[Broadie et~al.(2015)Broadie, Du, and Moallemi]{broadie2015risk}
 Mark Broadie, Yiping Du, and Ciamac~C Moallemi.
 \newblock Risk estimation via regression.
-\newblock \emph{Operations Research}, 63\penalty0 (5):\penalty0 1077--1097,
-  2015.
+\newblock \emph{Operations Research}, 63\penalty0 (5):\penalty0 1077--1097, 2015.
 
 \bibitem[Carlini and Wagner(2017)]{carlini2017towards}
 Nicholas Carlini and David Wagner.
 \newblock Towards evaluating the robustness of neural networks.
-\newblock In \emph{2017 ieee symposium on security and privacy (sp)}, pages
-  39--57. Ieee, 2017.
+\newblock In \emph{2017 ieee symposium on security and privacy (sp)}, pages 39--57. Ieee, 2017.
 
-\bibitem[Cathcart et~al.(2015)Cathcart, Lok, McNeil, and
-  Morrison]{cathcart2015calculating}
+\bibitem[Cathcart et~al.(2015)Cathcart, Lok, McNeil, and Morrison]{cathcart2015calculating}
 Mark~J Cathcart, Hsiao~Yen Lok, Alexander~J McNeil, and Steven Morrison.
-\newblock Calculating variable annuity liability “greeks” using monte carlo
-  simulation.
-\newblock \emph{ASTIN Bulletin: The Journal of the IAA}, 45\penalty0
-  (2):\penalty0 239--266, 2015.
+\newblock Calculating variable annuity liability “greeks” using monte carlo simulation.
+\newblock \emph{ASTIN Bulletin: The Journal of the IAA}, 45\penalty0 (2):\penalty0 239--266, 2015.
 
-\bibitem[Chung et~al.(2014)Chung, Gulcehre, Cho, and
-  Bengio]{chung2014empirical}
+\bibitem[Chung et~al.(2014)Chung, Gulcehre, Cho, and Bengio]{chung2014empirical}
 Junyoung Chung, Caglar Gulcehre, Kyunghyun Cho, and Yoshua Bengio.
-\newblock Empirical evaluation of gated recurrent neural networks on sequence
-  modeling.
+\newblock Empirical evaluation of gated recurrent neural networks on sequence modeling.
 \newblock 2014.
-\newblock \url{https://arxiv.org/abs/1412.3555}. Accessed 7$^{\textrm{th}}$ Sep
-  2023.
+\newblock \url{https://arxiv.org/abs/1412.3555}. Accessed 7$^{\textrm{th}}$ Sep 2023.
 
 \bibitem[Dang(2021)]{dang2021efficient}
 Ou~Dang.
-\newblock \emph{Efficient Nested Simulation of Tail Risk Measures for Variable
-  Annuities}.
-\newblock {Ph.D.} thesis, Department of Statistics and Actuarial Science,
-  University of Waterloo, Waterloo, ON, Canada, 2021.
+\newblock \emph{Efficient Nested Simulation of Tail Risk Measures for Variable Annuities}.
+\newblock {Ph.D.} thesis, Department of Statistics and Actuarial Science, University of Waterloo, Waterloo, ON, Canada, 2021.
 \newblock \url{https://uwspace.uwaterloo.ca/handle/10012/17084}.
 
 \bibitem[Dang et~al.(2020)Dang, Feng, and Hardy]{dang2020efficient}
 Ou~Dang, Mingbin Feng, and Mary~R Hardy.
-\newblock Efficient nested simulation for conditional tail expectation of
-  variable annuities.
-\newblock \emph{North American Actuarial Journal}, 24\penalty0 (2):\penalty0
-  187--210, 2020.
+\newblock Efficient nested simulation for conditional tail expectation of variable annuities.
+\newblock \emph{North American Actuarial Journal}, 24\penalty0 (2):\penalty0 187--210, 2020.
 
 \bibitem[EIOPA(2014)]{eiopa2014underlying}
 EIOPA.
-\newblock The underlying assumptions in the standard formula for the solvency
-  capital requirement calculation.
-\newblock Technical report, The European Insurance and Occupational Pensions
-  Authority, 2014.
+\newblock The underlying assumptions in the standard formula for the solvency capital requirement calculation.
+\newblock Technical report, The European Insurance and Occupational Pensions Authority, 2014.
 
-\bibitem[Fonseca et~al.(2003)Fonseca, Navaresse, and
-  Moynihan]{fonseca2003simulation}
+\bibitem[Fonseca et~al.(2003)Fonseca, Navaresse, and Moynihan]{fonseca2003simulation}
 Daniel~J Fonseca, Daniel~O Navaresse, and Gary~P Moynihan.
 \newblock Simulation metamodeling through artificial neural networks.
-\newblock \emph{Engineering applications of artificial intelligence},
-  16\penalty0 (3):\penalty0 177--183, 2003.
+\newblock \emph{Engineering applications of artificial intelligence}, 16\penalty0 (3):\penalty0 177--183, 2003.
 
 \bibitem[Gan and Lin(2015)]{gan2015valuation}
 Guojun Gan and Sheldon~X Lin.
-\newblock Valuation of large variable annuity portfolios under nested
-  simulation: A functional data approach.
-\newblock \emph{Insurance: Mathematics and Economics}, 62:\penalty0 138--150,
-  2015.
+\newblock Valuation of large variable annuity portfolios under nested simulation: A functional data approach.
+\newblock \emph{Insurance: Mathematics and Economics}, 62:\penalty0 138--150, 2015.
 
 \bibitem[Glasserman(2004)]{glasserman2004monte}
 Paul Glasserman.
 \newblock \emph{Monte Carlo Methods in Financial Engineering}, volume~53.
 \newblock Springer, 2004.
 
-\bibitem[Goodfellow et~al.(2014)Goodfellow, Shlens, and
-  Szegedy]{goodfellow2014explaining}
+\bibitem[Goodfellow et~al.(2014)Goodfellow, Shlens, and Szegedy]{goodfellow2014explaining}
 Ian~J Goodfellow, Jonathon Shlens, and Christian Szegedy.
 \newblock Explaining and harnessing adversarial examples.
 \newblock \emph{arXiv preprint arXiv:1412.6572}, 2014.
-\newblock \url{https://arxiv.org/abs/1412.6572}. Accessed 1$^{\textrm{st}}$ Jan
-  2024.
+\newblock \url{https://arxiv.org/abs/1412.6572}. Accessed 1$^{\textrm{st}}$ Jan 2024.
 
 \bibitem[Hardy(2003)]{hardy2003investment}
 Mary~R Hardy.
-\newblock \emph{Investment Guarantees: Modeling and Risk Management for
-  Equity-Linked Life Insurance}, volume 168.
+\newblock \emph{Investment Guarantees: Modeling and Risk Management for Equity-Linked Life Insurance}, volume 168.
 \newblock John Wiley \& Sons, 2003.
 
-\bibitem[Hastie et~al.(2009)Hastie, Tibshirani, and
-  Friedman]{hastie2009elements}
+\bibitem[Hastie et~al.(2009)Hastie, Tibshirani, and Friedman]{hastie2009elements}
 Trevor Hastie, Robert Tibshirani, and Jerome~H Friedman.
-\newblock \emph{The Elements of Statistical Learning: Data Mining, Inference,
-  and Prediction}, volume~2.
+\newblock \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction}, volume~2.
 \newblock Springer, 2009.
 
 \bibitem[Hochreiter and Schmidhuber(1997)]{hochreiter1997long}
@@ -103,164 +80,124 @@ Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 
 \bibitem[Hong et~al.(2017)Hong, Juneja, and Liu]{hong2017kernel}
 Jeff~L Hong, Sandeep Juneja, and Guangwu Liu.
-\newblock Kernel smoothing for nested estimation with application to portfolio
-  risk measurement.
+\newblock Kernel smoothing for nested estimation with application to portfolio risk measurement.
 \newblock \emph{Operations Research}, 65\penalty0 (3):\penalty0 657--673, 2017.
 
 \bibitem[Jiang et~al.(2020)Jiang, Huang, Liu, and Yang]{jiang2020beyond}
 Lu~Jiang, Di~Huang, Mason Liu, and Weilong Yang.
 \newblock Beyond synthetic noise: Deep learning on controlled noisy labels.
-\newblock In \emph{International conference on machine learning}, pages
-  4804--4815. PMLR, 2020.
+\newblock In \emph{International conference on machine learning}, pages 4804--4815. PMLR, 2020.
 
 \bibitem[Kingma and Ba(2014)]{kingma2014adam}
 Diederik~P Kingma and Jimmy Ba.
 \newblock Adam: A method for stochastic optimization.
 \newblock \emph{arXiv preprint arXiv:1412.6980}, 2014.
-\newblock \url{https://arxiv.org/pdf/1412.6980.pdf}. Accessed 7$^{\textrm{th}}$
-  Sep 2023.
+\newblock \url{https://arxiv.org/pdf/1412.6980.pdf}. Accessed 7$^{\textrm{th}}$ Sep 2023.
 
 \bibitem[LeCun et~al.(2015)LeCun, Bengio, and Hinton]{lecun2015deep}
 Yann LeCun, Yoshua Bengio, and Geoffrey~E Hinton.
 \newblock Deep learning.
 \newblock \emph{Nature}, 521\penalty0 (7553):\penalty0 436--444, 2015.
 
-\bibitem[Lieu et~al.(2022)Lieu, Nguyen, Dang, Lee, Kang, and
-  Lee]{lieu2022adaptive}
-Qui~X Lieu, Khoa~T Nguyen, Khanh~D Dang, Seunghye Lee, Joowon Kang, and Jaehong
-  Lee.
-\newblock An adaptive surrogate model to structural reliability analysis using
-  deep neural network.
+\bibitem[Lieu et~al.(2022)Lieu, Nguyen, Dang, Lee, Kang, and Lee]{lieu2022adaptive}
+Qui~X Lieu, Khoa~T Nguyen, Khanh~D Dang, Seunghye Lee, Joowon Kang, and Jaehong Lee.
+\newblock An adaptive surrogate model to structural reliability analysis using deep neural network.
 \newblock \emph{Expert Systems with Applications}, 189:\penalty0 116104, 2022.
 
 \bibitem[Liu and Staum(2010)]{liu2010stochastic}
 Ming Liu and Jeremy Staum.
-\newblock Stochastic kriging for efficient nested simulation of expected
-  shortfall.
+\newblock Stochastic kriging for efficient nested simulation of expected shortfall.
 \newblock \emph{Journal of Risk}, 12\penalty0 (3):\penalty0 3, 2010.
 
 \bibitem[Luo et~al.(2016)Luo, Li, Urtasun, and Zemel]{luo2016understanding}
 Wenjie Luo, Yujia Li, Raquel Urtasun, and Richard Zemel.
-\newblock Understanding the effective receptive field in deep convolutional
-  neural networks.
+\newblock Understanding the effective receptive field in deep convolutional neural networks.
 \newblock \emph{Advances in Neural Information Processing Systems}, 29, 2016.
 
 \bibitem[McCulloch and Pitts(1943)]{mcculloch1943logical}
 Warren~S McCulloch and Walter Pitts.
 \newblock A logical calculus of the ideas immanent in nervous activity.
-\newblock \emph{The Bulletin of Mathematical Biophysics}, 5:\penalty0 115--133,
-  1943.
+\newblock \emph{The Bulletin of Mathematical Biophysics}, 5:\penalty0 115--133, 1943.
 
-\bibitem[Neelakantan et~al.(2015)Neelakantan, Vilnis, Le, Sutskever, Kaiser,
-  Kurach, and Martens]{neelakantan2015adding}
-Arvind Neelakantan, Luke Vilnis, Quoc~V Le, Ilya Sutskever, Lukasz Kaiser,
-  Karol Kurach, and James Martens.
+\bibitem[Neelakantan et~al.(2015)Neelakantan, Vilnis, Le, Sutskever, Kaiser, Kurach, and Martens]{neelakantan2015adding}
+Arvind Neelakantan, Luke Vilnis, Quoc~V Le, Ilya Sutskever, Lukasz Kaiser, Karol Kurach, and James Martens.
 \newblock Adding gradient noise improves learning for very deep networks.
 \newblock \emph{arXiv preprint arXiv:1511.06807}, 2015.
-\newblock \url{https://arxiv.org/abs/1511.06807}. Accessed 1$^{\textrm{st}}$
-  Jan 2024.
+\newblock \url{https://arxiv.org/abs/1511.06807}. Accessed 1$^{\textrm{st}}$ Jan 2024.
 
 \bibitem[OpenAI(2023)]{chatgpt}
 OpenAI.
 \newblock Chatgpt, 2023.
-\newblock \url{https://chat.openai.com/chat}. Accessed 7$^{\textrm{th}}$ Sep
-  2023.
+\newblock \url{https://chat.openai.com/chat}. Accessed 7$^{\textrm{th}}$ Sep 2023.
 
 \bibitem[OSFI(2017)]{osfi2017life}
 OSFI.
 \newblock Life insurance capital adequacy test.
-\newblock Technical report, Office of the Superintendent of Financial
-  Institutes Canada, 2017.
+\newblock Technical report, Office of the Superintendent of Financial Institutes Canada, 2017.
 
-\bibitem[Poole et~al.(2014)Poole, Sohl-Dickstein, and
-  Ganguli]{poole2014analyzing}
+\bibitem[Poole et~al.(2014)Poole, Sohl-Dickstein, and Ganguli]{poole2014analyzing}
 Ben Poole, Jascha Sohl-Dickstein, and Surya Ganguli.
 \newblock Analyzing noise in autoencoders and deep networks.
 \newblock \emph{arXiv preprint arXiv:1406.1831}, 2014.
-\newblock \url{https://arxiv.org/abs/1406.1831}. Accessed 1$^{\textrm{st}}$ Jan
-  2024.
+\newblock \url{https://arxiv.org/abs/1406.1831}. Accessed 1$^{\textrm{st}}$ Jan 2024.
 
 \bibitem[Rockafellar and Uryasev(2002)]{rockafellar2002conditional}
 R~Tyrrell Rockafellar and Stanislav Uryasev.
 \newblock Conditional value-at-risk for general loss distributions.
-\newblock \emph{Journal of Banking \& Finance}, 26\penalty0 (7):\penalty0
-  1443--1471, 2002.
+\newblock \emph{Journal of Banking \& Finance}, 26\penalty0 (7):\penalty0 1443--1471, 2002.
 
 \bibitem[Rosenblatt(1958)]{rosenblatt1958perceptron}
 Frank Rosenblatt.
-\newblock The perceptron: A probabilistic model for information storage and
-  organization in the brain.
+\newblock The perceptron: A probabilistic model for information storage and organization in the brain.
 \newblock \emph{Psychological Review}, 65\penalty0 (6):\penalty0 386, 1958.
 
-\bibitem[Rumelhart et~al.(1985)Rumelhart, Hinton, and
-  Williams]{rumelhart1985learning}
+\bibitem[Rumelhart et~al.(1985)Rumelhart, Hinton, and Williams]{rumelhart1985learning}
 David~E Rumelhart, Geoffrey~E Hinton, and Ronald~J Williams.
 \newblock Learning internal representations by error propagation.
-\newblock Technical report, California University San Diego La Jolla Institute
-  for Cognitive Science, 1985.
+\newblock Technical report, California University San Diego La Jolla Institute for Cognitive Science, 1985.
 
 \bibitem[Salle and Y{\i}ld{\i}zo{\u{g}}lu(2014)]{salle2014efficient}
 Isabelle Salle and Murat Y{\i}ld{\i}zo{\u{g}}lu.
-\newblock Efficient eampling and meta-modeling for computational economic
-  models.
+\newblock Efficient eampling and meta-modeling for computational economic models.
 \newblock \emph{Computational Economics}, 44:\penalty0 507--536, 2014.
 
-\bibitem[Silver et~al.(2016)Silver, Huang, Maddison, Guez, Sifre, Van
-  Den~Driessche, Schrittwieser, Antonoglou, Panneershelvam, Lanctot,
-  et~al.]{silver2016mastering}
-David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George
-  Van Den~Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda
-  Panneershelvam, Marc Lanctot, et~al.
+\bibitem[Silver et~al.(2016)Silver, Huang, Maddison, Guez, Sifre, Van Den~Driessche, Schrittwieser, Antonoglou, Panneershelvam, Lanctot, et~al.]{silver2016mastering}
+David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George Van Den~Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda Panneershelvam, Marc Lanctot, et~al.
 \newblock Mastering the game of go with deep neural networks and tree search.
 \newblock \emph{Nature}, 529\penalty0 (7587):\penalty0 484--489, 2016.
 
-\bibitem[Srivastava et~al.(2014)Srivastava, Hinton, Krizhevsky, Sutskever, and
-  Salakhutdinov]{srivastava2014dropout}
-Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
-  Salakhutdinov.
+\bibitem[Srivastava et~al.(2014)Srivastava, Hinton, Krizhevsky, Sutskever, and Salakhutdinov]{srivastava2014dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov.
 \newblock Dropout: A simple way to prevent neural networks from overfitting.
-\newblock \emph{The Journal of Machine Learning Research}, 15\penalty0
-  (1):\penalty0 1929--1958, 2014.
+\newblock \emph{The Journal of Machine Learning Research}, 15\penalty0 (1):\penalty0 1929--1958, 2014.
 
-\bibitem[Sutskever et~al.(2014)Sutskever, Vinyals, and
-  Le]{sutskever2014sequence}
+\bibitem[Sutskever et~al.(2014)Sutskever, Vinyals, and Le]{sutskever2014sequence}
 Ilya Sutskever, Oriol Vinyals, and Quoc~V Le.
 \newblock Sequence to sequence learning with neural networks.
-\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~Lawrence, and K.Q.
-  Weinberger, editors, \emph{Advances in Neural Information Processing
-  Systems}, volume~27. Curran Associates, Inc., 2014.
-\newblock URL
-  \url{https://proceedings.neurips.cc/paper\_files/paper/2014/file/a14ac55a4f27472c5d894ec1c3c743d2-Paper.pdf}.
+\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~Lawrence, and K.Q. Weinberger, editors, \emph{Advances in Neural Information Processing Systems}, volume~27. Curran Associates, Inc., 2014.
+\newblock URL \url{https://proceedings.neurips.cc/paper\_files/paper/2014/file/a14ac55a4f27472c5d894ec1c3c743d2-Paper.pdf}.
 
-\bibitem[Szegedy et~al.(2013)Szegedy, Zaremba, Sutskever, Bruna, Erhan,
-  Goodfellow, and Fergus]{szegedy2013intriguing}
-Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan,
-  Ian Goodfellow, and Rob Fergus.
+\bibitem[Szegedy et~al.(2013)Szegedy, Zaremba, Sutskever, Bruna, Erhan, Goodfellow, and Fergus]{szegedy2013intriguing}
+Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan, Ian Goodfellow, and Rob Fergus.
 \newblock Intriguing properties of neural networks.
 \newblock \emph{arXiv preprint arXiv:1312.6199}, 2013.
-\newblock \url{https://arxiv.org/abs/1312.6199}. Accessed 1$^{\textrm{st}}$ Jan
-  2024.
+\newblock \url{https://arxiv.org/abs/1312.6199}. Accessed 1$^{\textrm{st}}$ Jan 2024.
 
 \bibitem[{The Geneva Association}(2013)]{geneva2013variable}
 {The Geneva Association}.
 \newblock Variable annuities—an analysis of financial stability.
 \newblock Technical report, 2013.
-\newblock
-  \url{https://www.genevaassociation.org/sites/default/files/research-topics-document-type/pdf\_public/ga2013-variable\_annuities\_0.pdf}.
-  Accessed 7$^{\textrm{th}}$ Sep 2023.
+\newblock \url{https://www.genevaassociation.org/sites/default/files/research-topics-document-type/pdf\_public/ga2013-variable\_annuities\_0.pdf}. Accessed 7$^{\textrm{th}}$ Sep 2023.
 
 \bibitem[Williams and Zipser(1989)]{williams1989learning}
 Ronald~J Williams and David Zipser.
-\newblock A learning algorithm for continually running fully recurrent neural
-  networks.
+\newblock A learning algorithm for continually running fully recurrent neural networks.
 \newblock \emph{Neural Computation}, 1\penalty0 (2):\penalty0 270--280, 1989.
 
 \bibitem[Zhang et~al.(2022)Zhang, Feng, Liu, and Wang]{zhang2022sample}
 Kun Zhang, Mingbin~Ben Feng, Guangwu Liu, and Shiyu Wang.
-\newblock Sample recycling for nested simulation with application in portfolio
-  risk measurement.
+\newblock Sample recycling for nested simulation with application in portfolio risk measurement.
 \newblock 2022.
-\newblock \url{https://arxiv.org/abs/2203.15929}. Accessed 2$^{\textrm{nd}}$
-  May 2023.
+\newblock \url{https://arxiv.org/abs/2203.15929}. Accessed 2$^{\textrm{nd}}$ May 2023.
 
 \end{thebibliography}
