@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.13)  4 JAN 2024 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.13)  4 JAN 2024 17:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -256,6 +256,18 @@ File: l3backend-pdftex.def 2023-10-23 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box58
 ) (nnMetamodels.aux)
+Runaway argument?
+{\contentsline {subsection}{\numberline {5.1}Two-Stage Procedure}{10}\ETC.
+c:/Users/XT/Documents/GitHub/nnMetamodels/nnMetamodels.tex:39: File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.39 \begin{document}
+                     
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \openout1 = `nnMetamodels.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -272,7 +284,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -335,13 +346,122 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (C:\Users\XT\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
 
-{C:/Users/XT/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Package natbib Warning: Citation `hastie2009elements' on page 1 undefined on input line 54.
+
+
+Package natbib Warning: Citation `lecun2015deep' on page 1 undefined on input line 54.
+
+
+Package natbib Warning: Citation `silver2016mastering' on page 1 undefined on input line 54.
+
+
+Package natbib Warning: Citation `chatgpt' on page 1 undefined on input line 54.
+
+
+Package natbib Warning: Citation `mcculloch1943logical' on page 1 undefined on input line 55.
+
+
+Package natbib Warning: Citation `rosenblatt1958perceptron' on page 1 undefined on input line 55.
+
+
+Package natbib Warning: Citation `rumelhart1985learning' on page 1 undefined on input line 55.
+
+
+Package natbib Warning: Citation `williams1989learning' on page 1 undefined on input line 56.
+
+
+Package natbib Warning: Citation `sutskever2014sequence' on page 1 undefined on input line 56.
+
+
+Package natbib Warning: Citation `hochreiter1997long' on page 1 undefined on input line 56.
+
+
+Package natbib Warning: Citation `chung2014empirical' on page 1 undefined on input line 56.
+
+
+Package natbib Warning: Citation `poole2014analyzing' on page 1 undefined on input line 59.
+
+
+Package natbib Warning: Citation `neelakantan2015adding' on page 1 undefined on input line 60.
+
+
+Package natbib Warning: Citation `luo2016understanding' on page 1 undefined on input line 62.
+
+
+Package natbib Warning: Citation `srivastava2014dropout' on page 1 undefined on input line 63.
+
+
+Package natbib Warning: Citation `szegedy2013intriguing' on page 1 undefined on input line 64.
+
+
+Package natbib Warning: Citation `goodfellow2014explaining' on page 1 undefined on input line 64.
+
+
+Package natbib Warning: Citation `carlini2017towards' on page 1 undefined on input line 65.
+
+
+Package natbib Warning: Citation `jiang2020beyond' on page 1 undefined on input line 66.
+
+[1
+
+{C:/Users/XT/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+Package natbib Warning: Citation `fonseca2003simulation' on page 2 undefined on input line 102.
+
+
+Package natbib Warning: Citation `lieu2022adaptive' on page 2 undefined on input line 102.
+
+
+Package natbib Warning: Citation `salle2014efficient' on page 2 undefined on input line 102.
+
+
+Package natbib Warning: Citation `liu2010stochastic' on page 2 undefined on input line 104.
+
+
+Package natbib Warning: Citation `gan2015valuation' on page 2 undefined on input line 104.
+
+
+Package natbib Warning: Citation `broadie2015risk' on page 2 undefined on input line 105.
+
+
+Package natbib Warning: Citation `hong2017kernel' on page 2 undefined on input line 105.
+
+
+Package natbib Warning: Citation `zhang2022sample' on page 2 undefined on input line 105.
+
+[2]
+
+Package natbib Warning: Citation `rockafellar2002conditional' on page 3 undefined on input line 131.
+
+
+Package natbib Warning: Citation `eiopa2014underlying' on page 3 undefined on input line 143.
+
+
+Package natbib Warning: Citation `osfi2017life' on page 3 undefined on input line 144.
+
 LaTeX Font Info:    Trying to load font information for U+eus on input line 149.
- (C:\Users\XT\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueus.fd
+(C:\Users\XT\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [3] [4]
+)
+
+Package natbib Warning: Citation `geneva2013variable' on page 3 undefined on input line 166.
+
+[3]
+
+Package natbib Warning: Citation `hardy2003investment' on page 4 undefined on input line 168.
+
+
+Package natbib Warning: Citation `dang2021efficient' on page 4 undefined on input line 170.
+
+
+Package natbib Warning: Citation `cathcart2015calculating' on page 4 undefined on input line 217.
+
+
+Package natbib Warning: Citation `glasserman2004monte' on page 4 undefined on input line 217.
+
+[4]
 <./figures/figure.pdf, id=33, 481.51494pt x 207.27136pt>
 File: ./figures/figure.pdf Graphic file (type pdf)
 <use ./figures/figure.pdf>
@@ -351,7 +471,25 @@ Package pdftex.def Info: ./figures/figure.pdf  used on input line 236.
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 267.
  (C:\Users\XT\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ubbold.fd
 File: ubbold.fd 1996/01/01 Blackboard Bold Font Definition File (jk)
-) [6] [7] [8]
+)
+
+Package natbib Warning: Citation `dang2020efficient' on page 6 undefined on input line 322.
+
+[6]
+
+Package natbib Warning: Citation `dang2020efficient' on page 7 undefined on input line 368.
+
+[7]
+
+Package natbib Warning: Citation `dang2020efficient' on page 8 undefined on input line 415.
+
+
+Package natbib Warning: Citation `dang2020efficient' on page 8 undefined on input line 421.
+
+[8]
+
+Package natbib Warning: Citation `kingma2014adam' on page 9 undefined on input line 445.
+
 <./figures/QPR_QQ.png, id=97, 578.16pt x 289.08pt>
 File: ./figures/QPR_QQ.png Graphic file (type png)
 <use ./figures/QPR_QQ.png>
@@ -362,88 +500,11 @@ File: ./figures/LSTM_QQ.png Graphic file (type png)
 <use ./figures/LSTM_QQ.png>
 Package pdftex.def Info: ./figures/LSTM_QQ.png  used on input line 497.
 (pdftex.def)             Requested size: 203.83417pt x 101.91614pt.
- [9]
+[9]
 <./figures/tailCutoff.png, id=107, 578.16pt x 289.08pt>
 File: ./figures/tailCutoff.png Graphic file (type png)
 <use ./figures/tailCutoff.png>
 Package pdftex.def Info: ./figures/tailCutoff.png  used on input line 516.
-(pdftex.def)             Requested size: 217.42265pt x 108.70908pt.
-<./figures/CVaR_lower.png, id=108, 578.16pt x 289.08pt>
-File: ./figures/CVaR_lower.png Graphic file (type png)
-<use ./figures/CVaR_lower.png>
-Package pdftex.def Info: ./figures/CVaR_lower.png  used on input line 531.
-(pdftex.def)             Requested size: 217.42265pt x 108.70908pt.
-<./figures/CVaR_higher.png, id=109, 578.16pt x 289.08pt>
-File: ./figures/CVaR_higher.png Graphic file (type png)
-<use ./figures/CVaR_higher.png>
-Package pdftex.def Info: ./figures/CVaR_higher.png  used on input line 536.
-(pdftex.def)             Requested size: 217.42265pt x 108.70908pt.
- [10 <./figures/QPR_QQ.png> <./figures/LSTM_QQ.png> <./figures/tailCutoff.png>] [11 <./figures/CVaR_lower.png> <./figures/CVaR_higher.png>] (nnMetamodels.bbl
-Underfull \hbox (badness 4981) in paragraph at lines 38--44
-[]\OT1/cmr/m/n/8 Ou Dang.  \OT1/cmr/m/it/8 Ef-fi-cient Nested Sim-u-la-tion of Tail Risk Mea-sures for Vari-able An-nu-ities\OT1/cmr/m/n/8 .  Ph.D. the-sis,
- []
-
-
-Underfull \hbox (badness 4048) in paragraph at lines 38--44
-\OT1/cmr/m/n/8 De-part-ment of Statis-tics and Ac-tu-ar-ial Sci-ence, Uni-ver-sity of Wa-ter-loo, Wa-ter-loo, ON, Canada, 2021.
- []
-
-
-Underfull \hbox (badness 1803) in paragraph at lines 156--162
-\OT1/cmr/m/n/8 Adding gra-di-ent noise im-proves learn-ing for very deep net-works.  \OT1/cmr/m/it/8 arXiv preprint arXiv:1511.06807\OT1/cmr/m/n/8 , 2015.
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 227--234
-[]\OT1/cmr/m/n/8 Ilya Sutskever, Oriol Vinyals, and Quoc V Le.  Se-quence to se-quence learn-ing with neu-ral net-
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 227--234
-\OT1/cmr/m/n/8 works.  In Z. Ghahra-mani, M. Welling, C. Cortes, N. Lawrence, and K.Q. Wein-berger, ed-i-tors, \OT1/cmr/m/it/8 Ad-
- []
-
-
-Underfull \hbox (badness 5288) in paragraph at lines 227--234
-\OT1/cmr/m/it/8 vances in Neu-ral In-for-ma-tion Pro-cess-ing Sys-tems\OT1/cmr/m/n/8 , vol-ume 27. Cur-ran As-so-ciates, Inc., 2014.  URL
- []
-
-
-Underfull \hbox (badness 3872) in paragraph at lines 245--251
-[]\OT1/cmr/m/n/8 The Geneva As-so-ci-a-tion.  Vari-able an-nu-ities|an anal-y-sis of fi-nan-cial sta-bil-ity.  Tech-ni-cal re-port, 2013.
- []
-
-
-Overfull \hbox (91.33086pt too wide) in paragraph at lines 245--251
-\OT1/cmtt/m/n/8 https://www.genevaassociation.org/sites/default/files/research-topics-document-type/pdf[]public/ga2013-variable[]annuities[]0.pdf\OT1/cmr/m/n/8 .
- []
-
-) [13] (nnMetamodels.aux)
- ***********
-LaTeX2e <2023-11-01>
-L3 programming layer <2023-11-01>
- ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
-Here is how much of TeX's memory you used:
- 6367 strings out of 474592
- 103333 string characters out of 5747214
- 1947533 words of memory out of 5000000
- 28434 multiletter control sequences out of 15000+600000
- 576822 words of font info for 108 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 67i,15n,77p,554b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\XT\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk> <C:\Users\XT\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nnMetamodels.pdf (13 pages, 573312 bytes).
-PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
-
-line 516.
 (pdftex.def)             Requested size: 217.42265pt x 108.70908pt.
 
 
@@ -534,17 +595,582 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6367 strings out of 474592
- 103333 string characters out of 5747214
+ 6368 strings out of 474592
+ 103346 string characters out of 5747214
  1952533 words of memory out of 5000000
- 28434 multiletter control sequences out of 15000+600000
+ 28435 multiletter control sequences out of 15000+600000
  576822 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,15n,77p,558b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,15n,77p,554b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\XT\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk> <C:\Users\XT\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nnMetamodels.pdf (13 pages, 572483 bytes).
+Output written on nnMetamodels.pdf (13 pages, 572711 bytes).
 PDF statistics:
  245 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+@^^@^^@^^@^^@^^@
+                            ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                               ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                     ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                        ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                           ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                              ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                 ^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+nnMetamodels.aux:1: Text line contains an invalid character.
+l.1 ...@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 6322 strings out of 474592
+ 102375 string characters out of 5747214
+ 1952533 words of memory out of 5000000
+ 28391 multiletter control sequences out of 15000+600000
+ 576822 words of font info for 108 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 67i,15n,77p,4183b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+nnMetamodels.aux:1:  ==> Fatal error occurred, no output PDF file produced!
