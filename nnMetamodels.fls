@@ -126,7 +126,6 @@ INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextr
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 OUTPUT nnMetamodels.pdf
 INPUT C:\Users\XT\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
@@ -138,6 +137,7 @@ INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbol
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
 INPUT C:\Users\XT\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
