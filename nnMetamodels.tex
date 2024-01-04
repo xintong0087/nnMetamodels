@@ -495,8 +495,12 @@ Our numerical results in Table~\ref{tab:gmwb_arch} provide strong evidence that 
 
 \section{Conclusion} \label{sec:conclusion}
 The proposed nested simulation procedures with deep neural network metamodels result in substantial computational savings in estimating CVaR of the hedging loss of a VA contract from accurately predicting the hedging losses and identifying the tail scenarios.
-An LSTM trained with noisy training labels is able to cut through the noise and learn the true complex dynamic hedging model.
-When new outer scenarios are generated, a trained metamodel can distinguish between tail and non-tail scenarios and make accurate predictions without the need to run new inner simulations.
+When new outer scenarios are generated, a trained LSTM metamodel can distinguish between tail and non-tail scenarios and make accurate predictions without the need to run new inner simulations.
+Our novel experiment design allows us to examine the impact of label noise on deep neural network models.
+We find that a deep neural network with a suitable architecture is able to cut through the noise in training labels and learn the true complex dynamic hedging model.
+By showcasing the resilience of these models, our study aims to influence regulatory bodies towards recognizing the value and applicability of deep learning metamodels in financial risk management, and it provide informed suggestions and guidance for the incorporation and oversight of advanced deep learning metamodel in Monte Carlo Simulation in financial applications.
+Our findings are particularly insightful in this context.
+In our numerical experiments, a LSTM metamodel is resilient to a high level of noise in training labels and is able to make accurate predictions. 
 
 
 \newpage
