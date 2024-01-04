@@ -551,8 +551,26 @@ For our two-stage procedure, achieving a similar accuracy as the standard proced
 By concentrating the simulation budget on the predicted tail scenarios, the two-stage procedure with the LSTM metamodel is able to achieve a similar accuracy as the standard procedure with a much smaller simulation budget.
 
 \subsection{Single-Stage Procedure}
+In contrast to the two-stage procedure, the single-stage procedure uses the metamodel predictions to estimate the $95\%$-CVaR directly.
+Instead of relying on the standard nested simulation procedure in Stage 2, the single-stage procedure is more efficient and extends to estimating other risk measures that require knowledge of the entire loss distribution.
+Rather than starting with tail identification, we first examine the single-stage procedure's performance in estimating the $95\%$-CVaR.
 
-In our single-stage procedure, the metamodel is used to estimate the $95\%$-CVaR directly.
+% \begin{figure}[ht!]
+%     \centering
+%     \begin{subfigure}{0.48\textwidth}
+%         \includegraphics[width=\textwidth]{./figures/CVaR_lower_1stage.png}
+%         \caption{Safety margin 0\% - 15\%.}
+%         \label{subfig:AllSafetyMargin1Stage}
+%     \end{subfigure}
+%     \begin{subfigure}{0.48\textwidth}
+%         \includegraphics[width=\textwidth]{./figures/CVaR_higher_1stage.png}
+%         \caption{Safety margin 7.5\% - 15\%.}
+%         \label{subfig:ZoomedSafetyMargin1Stage}
+%     \end{subfigure}
+%     \caption{95\%-CVaR estimates by different procedures. Right figure is a zoomed-in version of left figure.} 
+%     \label{fig:CVaR951Stage}
+
+Note that the single-stage procedure does not require a safety margin.
 
 
 \section{Conclusion} \label{sec:conclusion}
