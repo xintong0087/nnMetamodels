@@ -1,4 +1,4 @@
-\documentclass[]{article}
+\documentclass{article}
 \usepackage{geometry}
 \geometry{a4paper, margin=1in}
 \usepackage{inputenc}
@@ -482,9 +482,26 @@ Recall that all three data sets are generated from the same simulation model, bu
 Part of the test error is due to simulation noise, and this noise is lower in the true error.
 We observe that the two regression metamodels not only generalize to the test data poorly but also generalize to the true data poorly.
 In contrast, the deep neural network metamodels generalize better to the true data than to the test data.
+Figure~\ref{fig:QQ_GMWB} shows the quantile-quantile (QQ) plots between the true losses and the proxy losses.
+We see that the LSTM proxy models' QQ-plots closely follow that 45-degree line.
+Again, these proxy models are trained on noisy data, so the good fit to the true data should not be taken for granted.
 This implies that these models indeed learn the true feature-label relationship in the dynamic hedging simulation model (i.e., true data) even though they are trained on noisy observations (e.g., training data) of the model.
-      
-From a unique analytical standpoint regarding the numerical results, our study offers a methodical exploration into the robustness of deep neural network models against noise in training labels. 
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{./figures/QPR_QQ.png}
+        \caption{QPR metamodel}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{./figures/LSTM_QQ.png}
+        \caption{LSTM metamodel}
+    \end{subfigure}
+    \caption{QQ-plots between predicted losses (x-axis) and true losses (y-axis) for the same outer scenarios.} 
+    \label{fig:QQ_GMWB}
+\end{figure}
+
+From a unique analytical standpoint, our numerical study offers a methodical exploration into the robustness of deep neural network models against noise in training labels. 
 By employing the standard nested simulation procedure in Algorithm~\ref{alg:standardProcedure} as a data generator, we gain the ability to manipulate the noise level through adjusting the number of inner replications while keeping the same simulation procedure.
 As a result, this approach provides a controlled environment to examine the impact of label noise on neural network model.
 It allows us to generate our true dataset that approximates the true hedging losses with a high degree of precision, and, as a result, it enables us to explore the crucial question of whether deep learning models are capable of learning the true feature-label relationship from noisy training labels.
@@ -492,7 +509,51 @@ Our numerical results in Table~\ref{tab:gmwb_arch} provide direct evidence that 
 
 \subsection{Two-Stage Procedure}
 
+In our proposed two-stage procedure, the metamodel is used to identify the predicted tail scenario set, on which the standard nested simulation procedure is run in Stage 2 to estimate the $95\%$-CVaR.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\linewidth]{./figures/tailCutoff.png}
+    \caption{Percentage of correctly identified true tail scenarios by different proxy models.}
+    \label{fig:tailcutoff}
+\end{figure}
+
+We examine the metamodels' abilities to correctly identify true tail scenarios, which is crucial for the two-stage procedure to produce accurate CVaR estimates.
+Figure~\ref{fig:tailcutoff} depicts the percentage of correctly identified true tail scenarios by different metamodels for different safety margins.
+We see that a poor metamodel like the QPR identifies less than 40\% of the true tail scenario without any safety margin.
+In contrast, a good proxy model like the LSTM identifies more than 75\% of the true tail scenarios without any safety margin and more than the QPR proxy does with 15\% of safety margin.
+For comparison, the horizontal line shows the true tail identification percentage for the standard nested simulation procedure.
+The LSTM proxy reaches similar percentage with 5\% of safety margin, which corresponds to 5 times less simulation budget than the standard procedure's.
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./figures/CVaR_lower.png}
+        \caption{Safety margin 0\% - 15\%.}
+        \label{subfig:AllSafetyMargin}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./figures/CVaR_higher.png}
+        \caption{Safety margin 7.5\% - 15\%.}
+        \label{subfig:ZoomedSafetyMargin}
+    \end{subfigure}
+    \caption{95\%-CVaR estimates by different procedures. Right figure is a zoomed-in version of left figure.} 
+    \label{fig:CVaR95}
+\end{figure}
+
+Lastly, we return to our original goal of estimating the 95\%-CVaR of the dynamic hedging error.
+Figure~\ref{fig:CVaR95} shows the 95\%-CVaR estimates for different proxy models with different safety margins.
+Figure~\ref{subfig:ZoomedSafetyMargin} is a zoomed version of Figure~\ref{subfig:AllSafetyMargin}.
+Because the safety margin only affects the two-stage procedure, the true 95\%-CVaR and the one estimated by the standard procedure are horizontal (solid and dotted, respectively) lines in Figure~\ref{fig:CVaR95}.
+We see that, with reasonable safety margins, the two-stage procedures with RNN and LSTM metamodels produce estimates that are closer to the true value than the standard procedure's estimate.
+The LSTM metamodel is particularly superior as it accurately identifies the true tail scenarios and produces highly accurate CVaR estimates with small safety margins.
+For our two-stage procedure, achieving a similar accuracy as the standard procedure with a safety margin of 7.5\% corresponds to a 77.5\% reduction in the total simulation budget.
+By concentrating the simulation budget on the predicted tail scenarios, the two-stage procedure with the LSTM metamodel is able to achieve a similar accuracy as the standard procedure with a much smaller simulation budget.
+
 \subsection{Single-Stage Procedure}
+
+In our single-stage procedure, the metamodel is used to estimate the $95\%$-CVaR directly.
+
 
 \section{Conclusion} \label{sec:conclusion}
 The proposed nested simulation procedures with deep neural network metamodels result in substantial computational savings in estimating CVaR of the hedging loss of a VA contract from accurately predicting the hedging losses and identifying the tail scenarios.
