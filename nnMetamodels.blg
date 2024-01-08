@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: nnMetamodels.aux
+The style file: plainnat.bst
+Database file #1: refP2.bib
+Warning--empty booktitle in chung2014empirical
+Warning--empty institution in geneva2013variable
+Warning--empty journal in zhang2022sample
+You've used 37 entries,
+            2773 wiz_defined-function locations,
+            821 strings with 12331 characters,
+and the built_in function-call counts, 17337 in all, are:
+= -- 1522
+> -- 1119
+< -- 23
++ -- 378
+- -- 341
+* -- 1436
+:= -- 2743
+add.period$ -- 124
+call.type$ -- 37
+change.case$ -- 223
+chr.to.int$ -- 37
+cite$ -- 77
+duplicate$ -- 753
+empty$ -- 1331
+format.name$ -- 396
+if$ -- 3567
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 34
+newline$ -- 203
+num.names$ -- 150
+pop$ -- 417
+preamble$ -- 1
+purify$ -- 185
+quote$ -- 0
+skip$ -- 588
+stack$ -- 0
+substring$ -- 542
+swap$ -- 57
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 392
+warning$ -- 3
+while$ -- 149
+width$ -- 0
+write$ -- 501
+(There were 3 warnings)
