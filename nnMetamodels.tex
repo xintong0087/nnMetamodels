@@ -385,6 +385,7 @@ On the other hand, $\epsilon$ should be set reasonably large so more true tail s
 The selection of $m$ is highly dependent on the choice of the metamodel.
 Due to the simulation errors and approximation error in the metamodel in Stage 1, we do not expect perfect match between the true tail scenario set $\tail_{k}$ and the proxy tail scenario set $\widehat{\tail}_{k}^{PD}$ for any size $k$.
 This means that we should not set $m$ at its lower bound: Some safety margin $\epsilon M$ should be added to the proxy tail scenario set, i.e., $m = (1-\alpha )M + \epsilon M$, to increase the likelihood that $\tail_{k} \subseteq \widehat{\tail}_{m}^{PD}$ and that the true tail scenarios are included in estimating $\alpha$-CVaR at the end of Stage 2.
+The choice of safety margin $\epsilon$ is not trivial, and it should be set based on the metamodel's accuracy in identifying true tail scenarios.
 In the numerical experiments, we examine the relationship between the safety margin and the correct identification of true tail scenarios for different metamodels.
 
 \section{Single-Stage Nested Simulation with Neural Network Metamodels} \label{sec:metamodel1Stage}
@@ -600,12 +601,6 @@ This is expected because the high-capacity LSTM has more trainable parameters an
     \label{fig:QQ_LN}
 \end{figure}
 
-
-
-
-
-
-
 We proceed to examine the impact of noise on the metamodels' performance in predicting the true tail scenarios.
 
 
@@ -613,7 +608,7 @@ We proceed to examine the impact of noise on the metamodels' performance in pred
 
 The accuracy and robustness of the LSTM metamodels motivate us to propose a single-stage procedure that uses the metamodel predictions to estimate the CVaR directly.
 Instead of relying on the standard nested simulation procedure in Stage 2, the single-stage procedure is more efficient and extends to estimating other risk measures that require knowledge of the entire loss distribution.
-
+In this section, we compare the single-stage procedure to the two-stage procedure and the standard procedure in estimating the $95\%$-CVaR of the hedging losses for GMWB, and we also examine the single-stage procedure's performance in estimating the standard deviation of the hedging losses. 
 
 % \begin{figure}[ht!]
 %     \centering
@@ -631,6 +626,9 @@ Instead of relying on the standard nested simulation procedure in Stage 2, the s
 %     \label{fig:CVaR951Stage}
 
 Note that the single-stage procedure does not require a safety margin.
+By avoiding the calibration of the safety margin, it is more straight-forward to implement and is more efficient than the two-stage procedure.
+
+
 
 
 \section{Conclusion} \label{sec:conclusion}
@@ -641,6 +639,17 @@ We find that a deep neural network with a suitable architecture is able to cut t
 By showcasing the resilience of these models, our study aims to influence regulatory bodies towards recognizing the value and applicability of deep learning metamodels in financial risk management, and it provides informed suggestions and guidance for the incorporation and oversight of advanced deep learning metamodel in Monte Carlo Simulation in financial applications.
 Our findings are particularly insightful in this context.
 In our numerical experiments, a LSTM metamodel is resilient to a high level of noise in training labels and is able to make accurate predictions. 
+This is a promising evidence that deep neural network metamodels can be used to improve the efficiency of Monte Carlo simulation for quantitative risk management tasks that require a computational-expensive simulation procedure.
+We propose two nested simulation procedures that use deep neural network metamodels to estimate risk measures of the hedging loss of a VA contract.
+For estimating tail risk measures, our two-stage procedure is designed to address regulatory concerns by avoiding the direct use of metamodel predictions but instead use them to identify the potential tail scenarios.
+An extensive inner simulation is performed to achieve a high level of accuracy on the predicted tail scenarios.
+However, the safety margin in the two-stage procedure is a user's choice and is not easy to determine before running extensive numerical experiments.
+Our single-stage procedure uses the metamodel predictions to estimate the risk measure directly.
+It is more efficient and can be extended to estimate risk measures that require knowledge of the entire loss distribution.
+Our numerical experiments demonstrate that the proposed single-stage procedure with deep neural network metamodels result in further computational savings over our two-stage procedure. 
+Furthermore, our numerical results provide evidences for adopting deep neural network metamodels in Monte Carlo simulation for risk management tasks.
+Through our systematic study of the noise tolerance of deep neural network metamodels, we address regulatory concerns by showing that a LSTM metamodel is resilient to a high level of noise in training labels and is able to make accurate predictions.
+
 
 
 \newpage

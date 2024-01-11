@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.3)  8 JAN 2024 12:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.3)  11 JAN 2024 10:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,41 +340,41 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 26
 <./figures/QPR_QQ.png, id=98, 578.16pt x 289.08pt>
 File: ./figures/QPR_QQ.png Graphic file (type png)
 <use ./figures/QPR_QQ.png>
-Package pdftex.def Info: ./figures/QPR_QQ.png  used on input line 493.
+Package pdftex.def Info: ./figures/QPR_QQ.png  used on input line 494.
 (pdftex.def)             Requested size: 203.83417pt x 101.91614pt.
 <./figures/LSTM_QQ.png, id=100, 578.16pt x 289.08pt>
 File: ./figures/LSTM_QQ.png Graphic file (type png)
 <use ./figures/LSTM_QQ.png>
-Package pdftex.def Info: ./figures/LSTM_QQ.png  used on input line 497.
+Package pdftex.def Info: ./figures/LSTM_QQ.png  used on input line 498.
 (pdftex.def)             Requested size: 203.83417pt x 101.91614pt.
  [9]
 <./figures/tailCutoff.png, id=108, 578.16pt x 289.08pt>
 File: ./figures/tailCutoff.png Graphic file (type png)
 <use ./figures/tailCutoff.png>
-Package pdftex.def Info: ./figures/tailCutoff.png  used on input line 516.
+Package pdftex.def Info: ./figures/tailCutoff.png  used on input line 517.
 (pdftex.def)             Requested size: 217.42265pt x 108.70908pt.
 <./figures/CVaR_lower.png, id=109, 578.16pt x 289.08pt>
 File: ./figures/CVaR_lower.png Graphic file (type png)
 <use ./figures/CVaR_lower.png>
-Package pdftex.def Info: ./figures/CVaR_lower.png  used on input line 531.
+Package pdftex.def Info: ./figures/CVaR_lower.png  used on input line 532.
 (pdftex.def)             Requested size: 217.42265pt x 108.70908pt.
 <./figures/CVaR_higher.png, id=110, 578.16pt x 289.08pt>
 File: ./figures/CVaR_higher.png Graphic file (type png)
 <use ./figures/CVaR_higher.png>
-Package pdftex.def Info: ./figures/CVaR_higher.png  used on input line 536.
+Package pdftex.def Info: ./figures/CVaR_higher.png  used on input line 537.
 (pdftex.def)             Requested size: 217.42265pt x 108.70908pt.
  [10 <./figures/QPR_QQ.png> <./figures/LSTM_QQ.png> <./figures/tailCutoff.png>]
 <./figures/LSTM_LoCap/ProxyLN_QQ.png, id=117, 578.16pt x 289.08pt>
 File: ./figures/LSTM_LoCap/ProxyLN_QQ.png Graphic file (type png)
 <use ./figures/LSTM_LoCap/ProxyLN_QQ.png>
-Package pdftex.def Info: ./figures/LSTM_LoCap/ProxyLN_QQ.png  used on input line 592.
+Package pdftex.def Info: ./figures/LSTM_LoCap/ProxyLN_QQ.png  used on input line 593.
 (pdftex.def)             Requested size: 203.83417pt x 101.91614pt.
 <./figures/LSTM_HiCap/ProxyLN_QQ.png, id=118, 578.16pt x 289.08pt>
 File: ./figures/LSTM_HiCap/ProxyLN_QQ.png Graphic file (type png)
 <use ./figures/LSTM_HiCap/ProxyLN_QQ.png>
-Package pdftex.def Info: ./figures/LSTM_HiCap/ProxyLN_QQ.png  used on input line 596.
+Package pdftex.def Info: ./figures/LSTM_HiCap/ProxyLN_QQ.png  used on input line 597.
 (pdftex.def)             Requested size: 203.83417pt x 101.91614pt.
- [11 <./figures/CVaR_lower.png> <./figures/CVaR_higher.png>] [12 <./figures/LSTM_LoCap/ProxyLN_QQ.png> <./figures/LSTM_HiCap/ProxyLN_QQ.png>] (./nnMetamodels.bbl
+ [11 <./figures/CVaR_lower.png> <./figures/CVaR_higher.png>] [12 <./figures/LSTM_LoCap/ProxyLN_QQ.png> <./figures/LSTM_HiCap/ProxyLN_QQ.png>] [13] (./nnMetamodels.bbl
 Underfull \hbox (badness 4981) in paragraph at lines 38--44
 []\OT1/cmr/m/n/8 Ou Dang.  \OT1/cmr/m/it/8 Ef-fi-cient Nested Sim-u-la-tion of Tail Risk Mea-sures for Vari-able An-nu-ities\OT1/cmr/m/n/8 .  Ph.D. the-sis,
  []
@@ -389,7 +389,7 @@ Underfull \hbox (badness 1803) in paragraph at lines 156--162
 \OT1/cmr/m/n/8 Adding gra-di-ent noise im-proves learn-ing for very deep net-works.  \OT1/cmr/m/it/8 arXiv preprint arXiv:1511.06807\OT1/cmr/m/n/8 , 2015.
  []
 
-[13]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 227--234
 []\OT1/cmr/m/n/8 Ilya Sutskever, Oriol Vinyals, and Quoc V Le.  Se-quence to se-quence learn-ing with neu-ral net-
  []
@@ -414,7 +414,7 @@ Overfull \hbox (91.33086pt too wide) in paragraph at lines 245--251
 \OT1/cmtt/m/n/8 https://www.genevaassociation.org/sites/default/files/research-topics-document-type/pdf[]public/ga2013-variable[]annuities[]0.pdf\OT1/cmr/m/n/8 .
  []
 
-) [14] (./nnMetamodels.aux) ) 
+) [15] (./nnMetamodels.aux) ) 
 Here is how much of TeX's memory you used:
  6347 strings out of 478268
  103825 string characters out of 5846348
@@ -424,10 +424,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  67i,15n,77p,561b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on nnMetamodels.pdf (14 pages, 620760 bytes).
+Output written on nnMetamodels.pdf (15 pages, 622580 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
+ 258 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
