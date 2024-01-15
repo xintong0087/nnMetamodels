@@ -59,7 +59,7 @@ Enormous research efforts are spent to test and improve the robustness of deep n
 ~\cite{poole2014analyzing} show that injecting synthetic noise before and after hidden unit activations during training improves the performance of autoencoders.
 ~\cite{neelakantan2015adding} improve learning for deep neural networks by injecting synthetic noise to the gradients during backpropagations.
 A branch of research has been devoted to understanding the resilience of neural network models to noise in training labels.
-For example,~\cite{luo2016understanding} show that adding synthetic label noise to the convolutional neural network(CNN) can improve its ability to capture global features. 
+For example,~\cite{luo2016understanding} show that adding synthetic label noise to the convolutional neural network (CNN) can improve its ability to capture global features. 
 ~\cite{srivastava2014dropout} quantify the error tolerance by injecting synthetic label noise with a custom Boltzmann machine hardware.
 ~\cite{szegedy2013intriguing} find that neural networks are vulnerable to adversarial examples, and~\cite{goodfellow2014explaining} design an efficient method to generate such noisy examples to exploit the vulnerability to adversarial perturbations.
 ~\cite{carlini2017towards} design targeted attacks to training labels to test the robustness of neural networks. 
@@ -366,7 +366,7 @@ We propose a two-stage procedure with a neural network metamodel that aims to pr
 \end{algorithm}
 
 Similar to~\cite{dang2020efficient}, the proposed two-stage procedure in Algorithm ~\ref{alg:twoStageProcedure} uses the metamodel predictions to identify the predicted tail scenario set in Stage 1.
-But, different from their fixed-budget simulation design, we attempt to achieve a target accuracy.
+However, different from their fixed-budget simulation design, we attempt to achieve a target accuracy.
 Specifically, in Stage 2 we propose using a standard procedure with the same number of inner replications, $N$, as a competing simulation procedure (or a benchmark).
 There are two different experiment designs for nested simulation procedures: fixed-budget design and fixed-accuracy design.
 In a fixed-budget design, the simulation budget is fixed and the goal is to achieve the highest accuracy possible within the budget.
