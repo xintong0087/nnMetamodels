@@ -556,9 +556,11 @@ By concentrating the simulation budget on the predicted tail scenarios, the two-
 For financial and actuarial applications, regulators and practitioners are often concerned about the robustness of deep neural network models to noise in training labels, which hinders the adoption of these models in practice.
 Since the true relationship is unknown in real-world applications, most deep learning literature illustrates the impact of noise by artificially injecting noise into real-world datasets, which is already noisy before the injection.
 In our numerical experiments, we are able to use Monte Carlo simulation generate a true dataset that approximates the true hedging losses with a high degree of precision, and, as a result, we are able to explore the crucial question of whether deep learning models are capable of learning the true feature-label relationship from noisy training labels.
-In this section, we treat the standard nested simulation procedure as a data generator and examine the noise tolerance of LSTM metamodels by varying the number of inner replications used to generate the training labels.
+In this section, we treat the standard nested simulation procedure as a data generator and examine the noise tolerance of LSTM metamodels by varying the numbers of outer scenarios ($M$) and inner replications ($N$) used to generate the training data.
+The number of outer scenarios corresponds to the number of feature-label pairs in the training dataset, and the number of inner replications controls the noise level in the training labels.
 Recall that we use the standard nested simulation procedure with $N=100$ inner replications in our previous experiments, and we will refer to the resulting training dataset as the \textit{low-noise dataset}.
 We also generate a \textit{medium-noise dataset} and a \textit{high-noise dataset} by running the standard nested simulation procedure with $N=10$ and $N=1$ inner replications, respectively.
+By altering the data quantity and quality, we conduct a sensitivity analysis on the LSTM metamodels' noise tolerance.
 We study the impact of noisy data on two LSTM metamodels with different model capacities, i.e., different numbers of trainable parameters.
 The two LSTM metamodels has the same number of layers, but their numbers of hidden units in each layer are different.
 
@@ -602,6 +604,8 @@ This is expected because the high-capacity LSTM has more trainable parameters an
 \end{figure}
 
 We proceed to examine the impact of noise on the metamodels' performance in predicting the true tail scenarios.
+
+
 
 
 \subsection{Single-Stage Procedure}
