@@ -470,13 +470,14 @@ In machine-learning terminologies, the three deep neural network models have muc
     \label{tab:gmwb_arch}
 \end{table}
 
+For each metamodel, 50 independent macro runs are conducted.
 The last three columns in Table~\ref{tab:gmwb_arch} display the average squared errors between the predicted losses and the losses (labels) in different datasets.
 The standard errors of these quantities are also reported in parentheses.
 We first observe that the two regression metamodels' errors are larger than those of three deep neural network models.
 This is because model capacities of the regression metamodels are too low to learn the complex dynamic hedging simulation model.
 There are also differences among the three deep neural network models.
 The FNN is a generic neural network, its test error is larger than the training error, which is a sign of over-fitting and poor generalization.
-In contrast, RNN and LSTM are networks designed to capture temporal relationship in the high-dimensional feature.
+In contrast, RNN and LSTM networks are designed to capture temporal relationship in the high-dimensional feature.
 As a result, they have lower training errors, i.e., they fit the data better, and have lower testing error, i.e., they generalize better.
 Notably, the true errors for the deep neural network metamodels are lower than the test errors.
 Recall that all three data sets are generated from the same simulation model, but the true data set is less noisy than the training and test data.
@@ -569,21 +570,22 @@ The two LSTM metamodels has the same number of layers, but their numbers of hidd
     \centering
     \begin{tabular}{lccccc}
         \toprule
-        \textbf{Model} & \textbf{Noise Level} & \textbf{Training error} & \textbf{Test error} & \textbf{True error}\\
+        \textbf{Model} & \textbf{Noise level of training labels} & \textbf{Training error} & \textbf{True error}\\
         \midrule
-        Low-capcity  LSTM     & Low & $0.086 (\pm0.004)$ & $0.093 (\pm0.004)$ & $0.074 (\pm0.004)$ \\
-        High-capacity LSTM    & Low & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
-        Low-capcity  LSTM     & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
-        High-capacity LSTM    & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
-        Low-capcity  LSTM     & High & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
-        High-capacity LSTM    & High & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity  LSTM     & Low & $0.086 (\pm0.004)$ & $0.074 (\pm0.004)$ \\
+        High-capacity LSTM    & Low & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity  LSTM     & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        High-capacity LSTM    & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity  LSTM     & High & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        High-capacity LSTM    & High & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
         \bottomrule
     \end{tabular}
     \caption{Architectures and MSEs (standard errors) of LSTM metamodels.}
     \label{tab:lstm_arch}
 \end{table}
 
-Table~\ref{tab:lstm_arch} shows the average squared errors between the metamodel predictions and the labels in different datasets.
+Table~\ref{tab:lstm_arch} shows the average squared errors between the metamodel predictions and the labels in the training dataset and the true dataset.
+The test errors are omitted since we are only interested in the metamodels' ability to generalize to the true noiseless feature-label relationship.
 The standard errors of these quantities are also reported in parentheses.
 We first observe that both LSTM metamodels are able to learn the true feature-label relationship from the low-noise dataset.
 The QQ-plots presented in Figure~\ref{fig:QQ_LN} indicate that, compared to that of the low-capacity LSTM, the metamodel predictions of high-capacity LSTM align more closely with the true losses when trained on the low-noise dataset.
