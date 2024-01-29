@@ -53,7 +53,7 @@ The proposed procedures use deep neural networks as metamodels to provide accura
 
 Deep neural networks~\citep{hastie2009elements,lecun2015deep} have attracted attentions of researchers and practitioners due to their success in solving real-world supervised learning tasks such as AlphaGo~\citep{silver2016mastering} and ChatGPT~\citep{chatgpt}.
 Since the first artificial neural network model~\citep{mcculloch1943logical} and the first algorithm for training a perceptron~\citep{rosenblatt1958perceptron}, especially after the introduction of backpropagation~\citep{rumelhart1985learning} and the growth of high-performance computing, the field of artificial neural network and deep learning in general has grown rapidly.
-Two specialized neural network architectures that are relevant to our study are recurrent neural networks (RNNs)~\citep{williams1989learning,sutskever2014sequence} and long-short-term memory (LSTM)~\citep{hochreiter1997long,chung2014empirical}, as we need to train metamodels that take sequential observations as input.
+Two specialized neural network architectures that are relevant to our study are recurrent neural networks (RNNs)~\citep{williams1989learning,sutskever2014sequence} and long-short-term memory (LSTM)~\citep{hochreiter1997long,chung2014empirical}, as we need to train metamodels\footnote{In the field of actuarial science, a metamodel is commonly referred to as a proxy model.} that take sequential observations as input.
 Despite their success, deep neural network models are often criticized for their lack of transparency and interpretability, which hinders their adoption in financial and actuarial applications.
 Enormous research efforts are spent to test and improve the robustness of deep neural network models with carefully designed noise injection methods.
 ~\cite{poole2014analyzing} show that injecting synthetic noise before and after hidden unit activations during training improves the performance of autoencoders.
@@ -470,7 +470,7 @@ In machine-learning terminologies, the three deep neural network models have muc
     \label{tab:gmwb_arch}
 \end{table}
 
-For each metamodel, 50 independent macro replications are run\footnote[1]{Each macro replication includes simulating a noisy dataset, separating it into training and test data, fitting a metamodel, and making predictions}.
+For each metamodel, 50 independent macro replications are run\footnote{Each macro replication includes simulating a noisy dataset, separating it into training and test data, fitting a metamodel, and making predictions}.
 The last three columns in Table~\ref{tab:gmwb_arch} display the average squared errors between the predicted losses and the losses (labels) in different datasets.
 The half lengths of their 95\% confidence interval of these quantities are also reported in parentheses.
 We first observe that the two regression metamodels' errors are larger than those of three deep neural network models.
@@ -577,7 +577,7 @@ In a two-stage procedure, metamodels' overall prediction errors measured by the 
     \label{fig:tailMatches}
 \end{figure}
 
-Figure~\ref{fig:tailMatches} depicts the average percentage\footnote[2]{The average percentage is calculated based on 50 macro replications.} of correctly identified true tail scenarios by different metamodels for different safety margins.
+Figure~\ref{fig:tailMatches} depicts the average percentage\footnote{The average percentage is calculated based on 50 macro replications.} of correctly identified true tail scenarios by different metamodels for different safety margins.
 The percentage of tail matches of the traditional regression metamodels are significantly lower than the ones of the neural networks.
 We see that a poor metamodel like the QPR identifies less than 40\% of the true tail scenario without any safety margin.
 In contrast, a good metamodel like the LSTM identifies more than 75\% of the true tail scenarios without any safety margin and more than the QPR metamodel does with 15\% of safety margin.
@@ -666,10 +666,60 @@ There are two key observations.
     In contrast, the low-capacity LSTM is more robust to label noise.
 \end{enumerate}
 
+We proceed to examine the impact of noise on the LSTM metamodels' performance in predicting the true tail scenarios.
+In addition to the percentage of correctly identified true tail scenarios, Table~\ref{tab:lstm_corr} reports the Spearman rank correlation coefficients that measure the metamodels' ability to rank the scenarios by their true losses.
+The Pearson correlation coefficients are also included to illustrate the linear correlation between the predicted losses and the true losses.
+The p-values of these quantities are less than $10^{-5}$, indicating that the correlations are statistically significant.
 
+\begin{table}[ht!]
+    \small
+    \centering
+    \begin{tabular}{lccccc}
+        \toprule
+        \textbf{Model} & \textbf{Noise level of training labels} & \textbf{Training error} & \textbf{True error}\\
+        \midrule
+        Low-capcity   LSTM & Low    & $0.082 (\pm0.006)$ & $0.070 (\pm0.006)$ \\ 
+        High-capacity LSTM & Low    & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity   LSTM & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        High-capacity LSTM & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity   LSTM & High   & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        High-capacity LSTM & High   & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Spearman and Pearson correlation coefficients between LSTM predicted losses and true losses.}
+    \label{tab:lstm_corr}
+\end{table}
 
-We proceed to examine the impact of noise on the metamodels' performance in predicting the true tail scenarios.
+The effect of training label noise is more pronounced for the high-capacity LSTM than for the low-capacity LSTM.
+For both LSTM metamodels, the Spearman correlation coefficients are not significantly different from the Pearson correlation coefficients, which is significantly different from the two-stage procedure in~\cite{dang2020efficient}.
+This difference is due to the fact that the two-stage procedure in~\cite{dang2020efficient} uses a simplified asset model (i.e., a Black Scholes model) as a proxy simulation model for the regime-switching model. 
+The two models are significantly different, but the ranking of the scenarios by their losses is similar.
+For our two-stage procedure, the only difference between the simulation models in Stage 1 and Stage 2 is the number of inner replications.
+The ability for the LSTM metamodels to cut through the noise in training labels and learn the true feature-label relationship offers more accurate loss estimates (i.e., high Pearson correlations), which leads to more accurate rankings (i.e., high Spearman correlations).
+To further test the sensitivity of a LSTM metamodel and provide a more comprehensive picture of the noise tolerance of deep neural network models, we conduct a sensitivity analysis on the noise tolerance of the low-capacity LSTM metamodel by varying the numbers of outer scenarios ($M$) and inner replications ($N$) used to generate the training data.
+The number of outer scenarios corresponds to the number of feature-label pairs (i.e., data size) of the training dataset, and the number of inner replications controls the noise level in the training labels.
 
+\begin{table}[ht!]
+    \small
+    \centering
+    \begin{tabular}{lccccc}
+        \toprule
+        \textbf{Model} & \textbf{Noise level of training labels} & \textbf{Training error} & \textbf{True error}\\
+        \midrule
+        Low-capcity   LSTM & Low    & $0.082 (\pm0.006)$ & $0.070 (\pm0.006)$ \\ 
+        High-capacity LSTM & Low    & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity   LSTM & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        High-capacity LSTM & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity   LSTM & High   & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        High-capacity LSTM & High   & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Sensitivity of low-capacity LSTM metamodel to data size and noise level.}
+    \label{tab:lstm_sens}
+\end{table}
+
+Table~\ref{tab:lstm_sens} shows the average squared errors and the half widths of their 95\% confidence intervals between the predictions and the true losses for various combinations of $M$ and $N$.
+We observe that a decrease in data size has a profound impact on the widths of the confidence intervals.
 
 \subsection{Single-Stage Procedure}
 

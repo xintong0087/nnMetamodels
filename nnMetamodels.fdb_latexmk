@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex nnMetamodels"] 1706559405 "nnMetamodels.aux" "nnMetamodels.bbl" "nnMetamodels" 1706559406
+["bibtex nnMetamodels"] 1706561560 "nnMetamodels.aux" "nnMetamodels.bbl" "nnMetamodels" 1706561900
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "nnMetamodels.aux" 1706559406 9131 eedf0d677fcb2ec83b86a3e0d8e3dddd "pdflatex"
+  "nnMetamodels.aux" 1706561900 9641 155cbc3c681a2b7b7fc1397aeb9ca384 "pdflatex"
   "refP2.bib" 1704726148 22376 b5686ade35576c63caf06affe5649a0f ""
   (generated)
   "nnMetamodels.bbl"
   "nnMetamodels.blg"
-["pdflatex"] 1706559405 "/Users/xintong0079/Documents/GitHub/nnMetamodels/nnMetamodels.tex" "nnMetamodels.pdf" "nnMetamodels" 1706559406
-  "/Users/xintong0079/Documents/GitHub/nnMetamodels/nnMetamodels.tex" 1706559404 69574 4d9618a3e167e5527d05cf8dbdecb592 ""
+["pdflatex"] 1706561899 "/Users/xintong0079/Documents/GitHub/nnMetamodels/nnMetamodels.tex" "nnMetamodels.pdf" "nnMetamodels" 1706561900
+  "/Users/xintong0079/Documents/GitHub/nnMetamodels/nnMetamodels.tex" 1706561899 73869 acddfef5275523deb409fef8cc1281dd ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -152,9 +152,9 @@
   "figures/sns.pdf" 1704722678 81995 4dd5653a9a89b8ac82020905387cb923 ""
   "figures/tailMatches/nnLN.png" 1706552695 56154 cd2a73d87ed5ee094303f6a115d650bd ""
   "figures/tailMatches/regLN.png" 1706552695 56236 d2fd9651ccb3e72e804ffe645019270f ""
-  "nnMetamodels.aux" 1706559406 9131 eedf0d677fcb2ec83b86a3e0d8e3dddd "pdflatex"
-  "nnMetamodels.bbl" 1706559405 11541 472728bc12489efcaff068d4827fdbb1 "bibtex nnMetamodels"
-  "nnMetamodels.tex" 1706559404 69574 4d9618a3e167e5527d05cf8dbdecb592 ""
+  "nnMetamodels.aux" 1706561900 9641 155cbc3c681a2b7b7fc1397aeb9ca384 "pdflatex"
+  "nnMetamodels.bbl" 1706561560 11541 472728bc12489efcaff068d4827fdbb1 "bibtex nnMetamodels"
+  "nnMetamodels.tex" 1706561899 73869 acddfef5275523deb409fef8cc1281dd ""
   (generated)
   "nnMetamodels.aux"
   "nnMetamodels.log"
