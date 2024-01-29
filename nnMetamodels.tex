@@ -117,7 +117,7 @@ The rest of this article is organized as follows:
 Section~\ref{sec:problem-formulation} presents the problem settings for tail risk measures and dynamic hedging of VAs. 
 Section~\ref{sec:metamodel2Stage} proposes an efficient two-stage nested simulation procedure that uses deep neural networks as metamodels to help reduce simulation budget by only performing computations on identified tail scenarios. 
 Section~\ref{sec:metamodel1Stage} proposes a one-stage nested simulation procedure that estimates risk measures directly with metamodel predictions.
-Section~\ref{sec:numerical} demonstrates the efficiency of deep learning proxies and examines error tolerance of two LSTM proxy models with different numbers of trainable parameters. 
+Section~\ref{sec:numerical} demonstrates the efficiency of deep learning proxies and examines error tolerance of two LSTM metamodels with different numbers of trainable parameters. 
 Practical suggestions are provided for the choice of suitable metamodels and simulation settings. 
 
 \section{Problem Formulation} \label{sec:problem-formulation}
@@ -383,8 +383,8 @@ For ease of reference, we call the additional percentage of predicted tail scena
 On one hand, large $\epsilon$ is not desirable because it increases computations in Stage 2.
 On the other hand, $\epsilon$ should be set reasonably large so more true tail scenarios are included in the the predicted tail scenario set $\widehat{\tail}_{m}^{PD}$ and are ultimately included in $\widehat{\tail}_{(1-\alpha )M}$ at the end of Stage 2.
 The selection of $m$ is highly dependent on the choice of the metamodel.
-Due to the simulation errors and approximation error in the metamodel in Stage 1, we do not expect perfect match between the true tail scenario set $\tail_{k}$ and the proxy tail scenario set $\widehat{\tail}_{k}^{PD}$ for any size $k$.
-This means that we should not set $m$ at its lower bound: Some safety margin $\epsilon M$ should be added to the proxy tail scenario set, i.e., $m = (1-\alpha )M + \epsilon M$, to increase the likelihood that $\tail_{k} \subseteq \widehat{\tail}_{m}^{PD}$ and that the true tail scenarios are included in estimating $\alpha$-CVaR at the end of Stage 2.
+Due to the simulation errors and approximation error in the metamodel in Stage 1, we do not expect perfect match between the true tail scenario set $\tail_{k}$ and the predicted tail scenario set $\widehat{\tail}_{k}^{PD}$ for any size $k$.
+This means that we should not set $m$ at its lower bound: Some safety margin $\epsilon M$ should be added to the predicted tail scenario set, i.e., $m = (1-\alpha )M + \epsilon M$, to increase the likelihood that $\tail_{k} \subseteq \widehat{\tail}_{m}^{PD}$ and that the true tail scenarios are included in estimating $\alpha$-CVaR at the end of Stage 2.
 The choice of safety margin $\epsilon$ is not trivial, and it should be set based on the metamodel's accuracy in identifying true tail scenarios.
 In the numerical experiments, we examine the relationship between the safety margin and the correct identification of true tail scenarios for different metamodels.
 
@@ -459,18 +459,18 @@ In machine-learning terminologies, the three deep neural network models have muc
         \toprule
         \textbf{Model} & \textbf{\makecell{Layer size}} & \textbf{\makecell{\# parameters}} & \textbf{Training error} & \textbf{Test error} & \textbf{True error}\\
         \midrule
-        MLR     & N/A                       & 241          & $0.708 (\pm0.001)$ & $0.691 (\pm0.003)$ & $0.694 (\pm0.001)$ \\
-        QPR     & N/A                       & 481          & $0.543 (\pm0.001)$ & $0.544 (\pm0.003)$ & $0.530 (\pm0.001)$ \\
-        FNN     & $240, 128, 16$            & $35\!,\!009$ & $0.138 (\pm0.010)$ & $0.291 (\pm0.006)$ & $0.134 (\pm0.009)$ \\
+        MLR     & N/A                       & 241          & $0.707 (\pm0.001)$ & $0.691 (\pm0.003)$ & $0.694 (\pm0.001)$ \\
+        QPR     & N/A                       & 481          & $0.544 (\pm0.001)$ & $0.544 (\pm0.003)$ & $0.530 (\pm0.001)$ \\
+        FNN     & $240, 128, 16$            & $35\!,\!009$ & $0.118 (\pm0.010)$ & $0.291 (\pm0.006)$ & $0.113 (\pm0.009)$ \\
         RNN     & $(240, 32), (240, 4), 32$ & $32\!,\!021$ & $0.109 (\pm0.010)$ & $0.143 (\pm0.013)$ & $0.100 (\pm0.010)$ \\
-        LSTM    & $(240, 32), (240, 4), 32$ & $35\!,\!729$ & $0.086 (\pm0.004)$ & $0.093 (\pm0.004)$ & $0.074 (\pm0.004)$ \\
+        LSTM    & $(240, 32), (240, 4), 32$ & $35\!,\!729$ & $0.082 (\pm0.006)$ & $0.093 (\pm0.006)$ & $0.070 (\pm0.006)$ \\
         \bottomrule
     \end{tabular}
     \caption{Architectures and MSEs (standard errors) of metamodels for GMWB inner simulation model.}
     \label{tab:gmwb_arch}
 \end{table}
 
-For each metamodel, 50 independent macro runs are conducted.
+For each metamodel, 50 independent macro replications are run\footnote[1]{Each macro replication includes simulating a noisy dataset, separating it into training and test data, fitting a metamodel, and making predictions}.
 The last three columns in Table~\ref{tab:gmwb_arch} display the average squared errors between the predicted losses and the losses (labels) in different datasets.
 The standard errors of these quantities are also reported in parentheses.
 We first observe that the two regression metamodels' errors are larger than those of three deep neural network models.
@@ -480,13 +480,33 @@ The FNN is a generic neural network, its test error is larger than the training 
 In contrast, RNN and LSTM networks are designed to capture temporal relationship in the high-dimensional feature.
 As a result, they have lower training errors, i.e., they fit the data better, and have lower testing error, i.e., they generalize better.
 Notably, the true errors for the deep neural network metamodels are lower than the test errors.
+A LSTM network is a gated RNN that overcomes two key drawbacks of a crude RNN.
+\begin{enumerate}
+    \item It avoids the vanishing gradient problem during training, which makes the LSTM easier to than the RNN. Figure~\ref{fig:QQ_RNN} shows the quantile-quantile (QQ) plots between the \textbf{training} labels and the RNN predictions for two macro replications, where training of the latter is terminated early due to the vanishing gradient problem.
+    \item A LSTM introduces three gates that regulate the flow of information. These gates decide what information should be kept or discarded. This makes a LSTM more capcable of learning long-term dependencies. Since the feature in our dynamic hedging problem is a 240-dimensional time series, a LSTM is more suitable than a crude RNN.
+\end{enumerate}
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{./figures/qqPlots/rnnGood.png}
+        \caption{A good RNN metamodel}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{./figures/qqPlots/rnnBad.png}
+        \caption{A bad RNN metamodel}
+    \end{subfigure}
+    \caption{QQ-plots between training labels (x-axis) and predicted losses (y-axis) for the RNN metamodel.} 
+    \label{fig:QQ_RNN}
+\end{figure}
+
 Recall that all three data sets are generated from the same simulation model, but the true data set is less noisy than the training and test data.
-Part of the test error is due to simulation noise, and this noise is lower in the true error.
+Part of the training error is due to simulation noise, and this noise is lower in the true error.
 We observe that the two regression metamodels not only generalize to the test data poorly but also generalize to the true data poorly.
 In contrast, the deep neural network metamodels generalize better to the true data than to the test data.
-Figure~\ref{fig:QQ_GMWB} shows the quantile-quantile (QQ) plots between the true losses and the proxy losses.
-We see that the LSTM proxy models' QQ-plots closely follow that 45-degree line.
-Again, these proxy models are trained on noisy data, so the good fit to the true data should not be taken for granted.
+Figure~\ref{fig:QQ_GMWB} shows the QQ plots between the \textbf{true} labels and the metamodel predictions.
+We see that the LSTM metamodels' QQ-plots closely follow that 45-degree line.
+Again, these metamodels are trained on noisy data, so the good fit to the true data should not be taken for granted.
 This implies that these models indeed learn the true feature-label relationship in the dynamic hedging simulation model (i.e., true data) even though they are trained on noisy observations (e.g., training data) of the model.
 
 \begin{figure}[ht!]
@@ -512,6 +532,7 @@ Our numerical results in Table~\ref{tab:gmwb_arch} provide direct evidence that 
 \subsection{Two-Stage Procedure}
 
 In our proposed two-stage procedure, the metamodel is used to identify the predicted tail scenario set, on which the standard nested simulation procedure is run in Stage 2 to estimate the $95\%$-CVaR.
+An accurate identification of the true tail scenarios is crucial for the two-stage procedure to produce accurate CVaR estimates.
 
 \begin{figure}[ht]
     \centering
@@ -520,10 +541,10 @@ In our proposed two-stage procedure, the metamodel is used to identify the predi
     \label{fig:tailcutoff}
 \end{figure}
 
-We examine the metamodels' abilities to correctly identify true tail scenarios, which is crucial for the two-stage procedure to produce accurate CVaR estimates.
 Figure~\ref{fig:tailcutoff} depicts the percentage of correctly identified true tail scenarios by different metamodels for different safety margins.
+The percentage of tail matches of the traditional regression metamodels are significantly lower than the ones of the neural networks.
 We see that a poor metamodel like the QPR identifies less than 40\% of the true tail scenario without any safety margin.
-In contrast, a good proxy model like the LSTM identifies more than 75\% of the true tail scenarios without any safety margin and more than the QPR proxy does with 15\% of safety margin.
+In contrast, a good metamodel like the LSTM identifies more than 75\% of the true tail scenarios without any safety margin and more than the QPR metamodel does with 15\% of safety margin.
 For comparison, the horizontal line shows the true tail identification percentage for the standard nested simulation procedure.
 The LSTM proxy reaches similar percentage with 5\% of safety margin, which corresponds to 5 times less simulation budget than the standard procedure's.
 
@@ -572,12 +593,12 @@ The two LSTM metamodels has the same number of layers, but their numbers of hidd
         \toprule
         \textbf{Model} & \textbf{Noise level of training labels} & \textbf{Training error} & \textbf{True error}\\
         \midrule
-        Low-capcity  LSTM     & Low & $0.086 (\pm0.004)$ & $0.074 (\pm0.004)$ \\
-        High-capacity LSTM    & Low & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
-        Low-capcity  LSTM     & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
-        High-capacity LSTM    & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
-        Low-capcity  LSTM     & High & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
-        High-capacity LSTM    & High & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity   LSTM & Low    & $0.086 (\pm0.004)$ & $0.074 (\pm0.004)$ \\
+        High-capacity LSTM & Low    & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity   LSTM & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        High-capacity LSTM & Medium & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        Low-capcity   LSTM & High   & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
+        High-capacity LSTM & High   & $0.000 (\pm0.000)$ & $0.000 (\pm0.000)$ \\
         \bottomrule
     \end{tabular}
     \caption{Architectures and MSEs (standard errors) of LSTM metamodels.}
@@ -606,8 +627,6 @@ This is expected because the high-capacity LSTM has more trainable parameters an
 \end{figure}
 
 We proceed to examine the impact of noise on the metamodels' performance in predicting the true tail scenarios.
-
-
 
 
 \subsection{Single-Stage Procedure}

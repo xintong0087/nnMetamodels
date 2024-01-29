@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex nnMetamodels"] 1705544894.19915 "nnMetamodels.aux" "nnMetamodels.bbl" "nnMetamodels" 1705544895.58313 0
+["bibtex nnMetamodels"] 1706537064.04573 "nnMetamodels.aux" "nnMetamodels.bbl" "nnMetamodels" 1706537228.32154 0
   "./refP2.bib" 1705416981 23093 b5686ade35576c63caf06affe5649a0f ""
   "C:/Users/XT/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "nnMetamodels.aux" 1705544895 8773 287bc4e000b8b72f10a2b156098c9ec3 "pdflatex"
+  "nnMetamodels.aux" 1706537227 9008 d6e05b066a35c32335630d16b35b7dfe "pdflatex"
   (generated)
   "nnMetamodels.bbl"
   "nnMetamodels.blg"
   (rewritten before read)
-["pdflatex"] 1705544894.51937 "c:/Users/XT/Documents/GitHub/nnMetamodels/nnMetamodels.tex" "nnMetamodels.pdf" "nnMetamodels" 1705544895.58349 0
+["pdflatex"] 1706537227.18375 "c:/Users/XT/Documents/GitHub/nnMetamodels/nnMetamodels.tex" "nnMetamodels.pdf" "nnMetamodels" 1706537228.32192 0
   "C:/Users/XT/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1705417832 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/XT/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1705417838 11548 63b79798d9d8c8def34eb6ca38e6c7aa ""
   "C:/Users/XT/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi600/bbold10.pk" 1705417837 12432 5d759353731397b2324e8fabbacb439e ""
@@ -138,18 +138,20 @@
   "C:/Users/XT/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty" 1292249081 46712 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "C:/Users/XT/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Users/XT/AppData/Local/Programs/MiKTeX/tex/latex/tools/bm.sty" 1700599895 13231 2c742011581e2bf297e33520567d9464 ""
-  "c:/Users/XT/Documents/GitHub/nnMetamodels/nnMetamodels.tex" 1705544891 65245 d9c267cce8bbdefdcf6c3c4b084f89ad ""
+  "c:/Users/XT/Documents/GitHub/nnMetamodels/nnMetamodels.tex" 1706537226 66856 5e5de9ccae24b594419fc60ca82c909d ""
   "figures/CVaR_higher.png" 1705416981 38127 6fd23d7836a92131b90fca5cc3ea9a6d ""
   "figures/CVaR_lower.png" 1705416981 48488 092126cba2f4a40b400a7a75b76dfcaa ""
   "figures/LSTM_HiCap/ProxyLN_QQ.png" 1705416981 45511 67faffaca4f5897ee49f60c950b18f07 ""
   "figures/LSTM_LoCap/ProxyLN_QQ.png" 1705416981 45541 4554ef15a7fd2a17170d67c2e9ded589 ""
   "figures/LSTM_QQ.png" 1705416981 42619 da0c64be2ceafa7177132d466fb285f8 ""
   "figures/QPR_QQ.png" 1705416981 44889 8cd42aeda61a12e38dc9e7091c5e7971 ""
+  "figures/qqPlots/rnnBad.png" 1706535686 38585 f44ff0f8f893b20795a75f6910632310 ""
+  "figures/qqPlots/rnnGood.png" 1706535683 38115 9a571665c72792b88b31e12cfdb1ee1e ""
   "figures/sns.pdf" 1705416981 81995 5e6a7121f3b89a7502e0dc958f507f49 ""
   "figures/tailCutoff.png" 1705416981 56440 bcfe23d92cbad11d07fb8e49f98170b3 ""
-  "nnMetamodels.aux" 1705544895 8773 287bc4e000b8b72f10a2b156098c9ec3 "pdflatex"
-  "nnMetamodels.bbl" 1705544894 11807 472728bc12489efcaff068d4827fdbb1 "bibtex nnMetamodels"
-  "nnMetamodels.tex" 1705544891 65245 d9c267cce8bbdefdcf6c3c4b084f89ad ""
+  "nnMetamodels.aux" 1706537227 9008 d6e05b066a35c32335630d16b35b7dfe "pdflatex"
+  "nnMetamodels.bbl" 1706537064 11807 472728bc12489efcaff068d4827fdbb1 "bibtex nnMetamodels"
+  "nnMetamodels.tex" 1706537226 66856 5e5de9ccae24b594419fc60ca82c909d ""
   (generated)
   "nnMetamodels.aux"
   "nnMetamodels.log"
