@@ -763,32 +763,16 @@ Figure~\ref{fig:CVaRsingleStage} shows the boxplots of the 95\%-CVaR estimates o
 The two-stage procedure uses the same simulation budget as the single-stage procedure in Stage 1 with extra budget for extensive inner simulation on the predicted tail scenarios in Stage 2.
 The metamodel with the best performance in the two-stage procedure is chosen, and the safety margin is set to 0\%.
 The standard procedure uses the same simulation budget as the single-stage procedure.
-We observe that the single-stage procedures with the LSTM metamodels consistently produce CVaR estimates that are closer to the true value than the standard procedure's estimate.
+We observe that the single-stage procedures with the LSTM metamodels consistently produce CVaR estimates that are closer to the true value than the standard procedure's estimate, especially when the noise level is high in the training labels.
+It is another strong evidence that the LSTM metamodel is able to cut through the noise in the noisy training labels and make accurate loss predictions that lead to accurate CVaR estimates.
+
 The single-stage procedure with the LSTM metamodels is particularly superior to the two-stage procedure, as it is able to achieve a similar accuracy as the standard procedure with a much smaller simulation budget.
 Note that the single-stage procedure does not require a safety margin.
 By avoiding the calibration of the safety margin, it is more straight-forward to implement and is more efficient than the two-stage procedure.
-
 For a two-stage procedure with a 0\% safety margin, the extra computational cost is from the extensive inner simulation in Stage 2.
 On 4 20-core Intel Xeon Gold 6230 processors, Stage 2 of the two-stage procedure takes 30 minutes to run with parallel processing, while the 95\% confidence interval of training time of the high-capacity LSTM metamodel is $(19.64 \pm 0.94)$ minutes on a Nvidia RTX 3060 Ti GPU.
 While the accuracy of the two-stage procedure is highly dependent on the safety margin, increasing the safety margin introduces extra computational cost.
-Therefore, while achieving a higher accuracy in estimating the CVaR, the single-stage procedure is at least 2.5 times more efficient than the two-stage procedure.
-
-
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[width=\textwidth]{./figures/singleStage/mnConvergenceLoCap.png}
-    \caption{Empirical convergence of the single-stage procedure with a low-capacity LSTM metamodel.} 
-    \label{fig:mnConvergence}
-\end{figure}
-
-Figure~\ref{fig:mnConvergence} shows the log-log plots of the relative root mean square errors (RRMSE) between the LSTM metamodel CVaR predictions and the true CVaR against the simulation budget.
-The left figure shows the empirical convergence of the RRMSE for increasing inner replications with a fixed number of outer scenarios ($M=100\!,\!000$), and the right figure shows the empirical convergence of the RRMSE for increasing outer scenarios with a fixed number of inner replications ($N=1$).
-Due to computational constraints, we are not able to run the two-stage procedure and the standard procedure with a higher $M$ or $N$, therefore the comparison between the single-stage procedure is only available up to $M = 100\!,000$ and $N = 1\!,000$.
-We observe that the RRMSE decreases as the simulation budget increases, and the rate of convergence is higher when the quantity of the data increases.
-For an LSTM metamodel, increasing the data quality of the training labels has diminishing returns.
-For an increasing number of inner replications with fixed number of outer scenarios, the RRMSE cease to decrease after reaching $N = 100$. 
-Hence, in practice, we suggest to run the single-stage procedure with a moderate number of inner replications and a large number of outer scenarios to achieve a high level of accuracy with a reasonable computational cost.
-
+Therefore, while achieving a higher accuracy in estimating the CVaR, the single-stage procedure requires only $60\%$ computation time of the two-stage procedure.
 
 \begin{figure}[ht!]
     \centering
@@ -806,11 +790,27 @@ Hence, in practice, we suggest to run the single-stage procedure with a moderate
     \label{fig:gammaConvergence}
 \end{figure}
 
-Figure~\ref{fig:gammaConvergence} shows the log-log plots of the relative root mean square errors between the LSTM metamodel CVaR predictions and the true CVaR against the total simulation budget $\Gamma$.
+Figure~\ref{fig:gammaConvergence} shows the log-log plots of the relative root mean square errors (RRMSE) between the LSTM metamodel CVaR predictions and the true CVaR against the total simulation budget $\Gamma$.
 For each budget $\Gamma$, the metamodels are trained for different combinations of $M$ and $N$, and the metamodel with the best RRMSE is plotted.
 While numerical results suggests that the CVaR estimator of the single-stage procedure with LSTM metamodels may have better accuracy than the two-stage procedure and the standard procedure when the number of outer scenarios is further increased, we found it difficult to compare their performance due to insufficient computational resources.
 For $\Gamma \leq 100\!,000$, the number of outer scenarios is fixed at $M = 100\!,000$, and only the number of inner replications is varied.
-The diminishing returns of increasing the number of inner replications is consistent with the results in Figure~\ref{fig:mnConvergence}.
+Instead, we try to analyze the effect of the number of outer scenarios and the number of inner replications separately by fixing one and varying the other.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\textwidth]{./figures/singleStage/MSEConvergence_lstmLoCap_MN.png}
+    \caption{Empirical convergence of the single-stage procedure with a low-capacity LSTM metamodel.} 
+    \label{fig:mnConvergence}
+\end{figure}
+
+Figure~\ref{fig:mnConvergence} shows the log-log plots of the RRMSE between the LSTM metamodel CVaR predictions and the true CVaR against the simulation budget.
+The left figure shows the empirical convergence of the RRMSE for increasing inner replications with a fixed number of outer scenarios ($M=100\!,\!000$), and the right figure shows the empirical convergence of the RRMSE for increasing outer scenarios with a fixed number of inner replications ($N=10$).
+Due to computational constraints, we are not able to run the two-stage procedure and the standard procedure with a higher $M$ or $N$, therefore the comparison between the single-stage procedure is only available up to $M = 100\!,000$ and $N = 1\!,000$.
+We observe that the RRMSE decreases as the simulation budget increases, and the rate of convergence is higher when the quantity of the data increases.
+For an LSTM metamodel, increasing the data quality of the training labels has diminishing returns, which is consistent with the results in Figure~\ref{fig:mnConvergence}.
+For an increasing number of inner replications with fixed number of outer scenarios, the RRMSE cease to decrease after reaching $N = 100$. 
+More specfically, when the quality of the training labels is fixed at $N = 10$, the CVaR estimator of single-stage procedure with a LSTM metamodel converge empirically in $\mathcal{O}(\Gamma^{-\frac{2}{3}})$.
+Hence, in practice, we suggest to run the single-stage procedure with a moderate number of inner replications and a large number of outer scenarios to achieve a high level of accuracy with a reasonable computational cost.
 
 \section{Conclusion} \label{sec:conclusion}
 The proposed nested simulation procedures with deep neural network metamodels result in substantial computational savings in estimating CVaR of the hedging loss of a VA contract from accurately predicting the hedging losses and identifying the tail scenarios.

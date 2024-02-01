@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.16)  1 FEB 2024 11:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.16)  1 FEB 2024 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -419,22 +419,22 @@ File: ./figures/singleStage/CVaRmediumNoise.png Graphic file (type png)
 Package pdftex.def Info: ./figures/singleStage/CVaRmediumNoise.png  used on input line 755.
 (pdftex.def)             Requested size: 217.42265pt x 163.06363pt.
  [15 <./figures/singleStage/CVaRlowNoise.png> <./figures/singleStage/CVaRmediumNoise.png>]
-<./figures/singleStage/mnConvergenceLoCap.png, id=151, 722.7pt x 361.35pt>
-File: ./figures/singleStage/mnConvergenceLoCap.png Graphic file (type png)
-<use ./figures/singleStage/mnConvergenceLoCap.png>
-Package pdftex.def Info: ./figures/singleStage/mnConvergenceLoCap.png  used on input line 779.
-(pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
-<./figures/singleStage/MSEConvergence_lstmLoCap.png, id=152, 462.528pt x 346.896pt>
+<./figures/singleStage/MSEConvergence_lstmLoCap.png, id=151, 462.528pt x 346.896pt>
 File: ./figures/singleStage/MSEConvergence_lstmLoCap.png Graphic file (type png)
 <use ./figures/singleStage/MSEConvergence_lstmLoCap.png>
-Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmLoCap.png  used on input line 796.
+Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmLoCap.png  used on input line 780.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/singleStage/MSEConvergence_lstmHiCap.png, id=153, 462.528pt x 346.896pt>
+<./figures/singleStage/MSEConvergence_lstmHiCap.png, id=152, 462.528pt x 346.896pt>
 File: ./figures/singleStage/MSEConvergence_lstmHiCap.png Graphic file (type png)
 <use ./figures/singleStage/MSEConvergence_lstmHiCap.png>
-Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmHiCap.png  used on input line 801.
+Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmHiCap.png  used on input line 785.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
- [16 <./figures/singleStage/mnConvergenceLoCap.png>] [17 <./figures/singleStage/MSEConvergence_lstmLoCap.png> <./figures/singleStage/MSEConvergence_lstmHiCap.png>] [18] (nnMetamodels.bbl
+<./figures/singleStage/MSEConvergence_lstmLoCap_MN.png, id=153, 867.24pt x 361.35pt>
+File: ./figures/singleStage/MSEConvergence_lstmLoCap_MN.png Graphic file (type png)
+<use ./figures/singleStage/MSEConvergence_lstmLoCap_MN.png>
+Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmLoCap_MN.png  used on input line 801.
+(pdftex.def)             Requested size: 452.9679pt x 188.73566pt.
+ [16 <./figures/singleStage/MSEConvergence_lstmLoCap.png> <./figures/singleStage/MSEConvergence_lstmHiCap.png>] [17 <./figures/singleStage/MSEConvergence_lstmLoCap_MN.png>] [18] (nnMetamodels.bbl
 Underfull \hbox (badness 4981) in paragraph at lines 38--44
 []\OT1/cmr/m/n/8 Ou Dang.  \OT1/cmr/m/it/8 Ef-fi-cient Nested Sim-u-la-tion of Tail Risk Mea-sures for Vari-able An-nu-ities\OT1/cmr/m/n/8 .  Ph.D. the-sis,
  []
@@ -482,14 +482,14 @@ L3 programming layer <2024-01-04>
  ) 
 Here is how much of TeX's memory you used:
  6455 strings out of 474485
- 106893 string characters out of 5745150
+ 106956 string characters out of 5745150
  1948528 words of memory out of 5000000
  28630 multiletter control sequences out of 15000+600000
  576822 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,15n,77p,560b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\XT\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold10.pk> <C:\Users\XT\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eusm7.pfb><C:/Users/XT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nnMetamodels.pdf (20 pages, 864542 bytes).
+Output written on nnMetamodels.pdf (20 pages, 867552 bytes).
 PDF statistics:
  289 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

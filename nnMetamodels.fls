@@ -271,13 +271,6 @@ INPUT .\figures\singleStage\CVaRmediumNoise.png
 INPUT .\figures\singleStage\CVaRmediumNoise.png
 INPUT .\figures\singleStage\CVaRmediumNoise.png
 INPUT .\figures\singleStage\CVaRmediumNoise.png
-INPUT .\figures\singleStage\mnConvergenceLoCap.png
-INPUT .\figures\singleStage\mnConvergenceLoCap.png
-INPUT .\figures\singleStage\mnConvergenceLoCap.png
-INPUT .\figures\singleStage\mnConvergenceLoCap.png
-INPUT .\figures\singleStage\mnConvergenceLoCap.png
-INPUT .\figures\singleStage\mnConvergenceLoCap.png
-INPUT .\figures\singleStage\mnConvergenceLoCap.png
 INPUT .\figures\singleStage\MSEConvergence_lstmLoCap.png
 INPUT .\figures\singleStage\MSEConvergence_lstmLoCap.png
 INPUT .\figures\singleStage\MSEConvergence_lstmLoCap.png
@@ -292,6 +285,13 @@ INPUT .\figures\singleStage\MSEConvergence_lstmHiCap.png
 INPUT .\figures\singleStage\MSEConvergence_lstmHiCap.png
 INPUT .\figures\singleStage\MSEConvergence_lstmHiCap.png
 INPUT .\figures\singleStage\MSEConvergence_lstmHiCap.png
+INPUT .\figures\singleStage\MSEConvergence_lstmLoCap_MN.png
+INPUT .\figures\singleStage\MSEConvergence_lstmLoCap_MN.png
+INPUT .\figures\singleStage\MSEConvergence_lstmLoCap_MN.png
+INPUT .\figures\singleStage\MSEConvergence_lstmLoCap_MN.png
+INPUT .\figures\singleStage\MSEConvergence_lstmLoCap_MN.png
+INPUT .\figures\singleStage\MSEConvergence_lstmLoCap_MN.png
+INPUT .\figures\singleStage\MSEConvergence_lstmLoCap_MN.png
 INPUT .\nnMetamodels.bbl
 INPUT .\nnMetamodels.bbl
 INPUT nnMetamodels.bbl
