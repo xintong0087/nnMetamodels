@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.3)  1 FEB 2024 16:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.3)  1 FEB 2024 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,91 +337,91 @@ Package pdftex.def Info: ./figures/sns.pdf  used on input line 236.
  [5 <./figures/sns.pdf>]
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 267.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bbold/Ubbold.fd) [6] [7] [8] [9]
-<./figures/qqPlots/rnnGood.png, id=106, 462.528pt x 346.896pt>
+<./figures/qqPlots/rnnGood.png, id=107, 462.528pt x 346.896pt>
 File: ./figures/qqPlots/rnnGood.png Graphic file (type png)
 <use ./figures/qqPlots/rnnGood.png>
-Package pdftex.def Info: ./figures/qqPlots/rnnGood.png  used on input line 492.
+Package pdftex.def Info: ./figures/qqPlots/rnnGood.png  used on input line 493.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/qqPlots/rnnBad.png, id=108, 462.528pt x 346.896pt>
+<./figures/qqPlots/rnnBad.png, id=109, 462.528pt x 346.896pt>
 File: ./figures/qqPlots/rnnBad.png Graphic file (type png)
 <use ./figures/qqPlots/rnnBad.png>
-Package pdftex.def Info: ./figures/qqPlots/rnnBad.png  used on input line 496.
+Package pdftex.def Info: ./figures/qqPlots/rnnBad.png  used on input line 497.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/qqPlots/mlrLN.png, id=109, 462.528pt x 346.896pt>
+<./figures/qqPlots/mlrLN.png, id=110, 462.528pt x 346.896pt>
 File: ./figures/qqPlots/mlrLN.png Graphic file (type png)
 <use ./figures/qqPlots/mlrLN.png>
-Package pdftex.def Info: ./figures/qqPlots/mlrLN.png  used on input line 513.
+Package pdftex.def Info: ./figures/qqPlots/mlrLN.png  used on input line 514.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/qqPlots/qprLN.png, id=110, 462.528pt x 346.896pt>
+<./figures/qqPlots/qprLN.png, id=111, 462.528pt x 346.896pt>
 File: ./figures/qqPlots/qprLN.png Graphic file (type png)
 <use ./figures/qqPlots/qprLN.png>
-Package pdftex.def Info: ./figures/qqPlots/qprLN.png  used on input line 517.
+Package pdftex.def Info: ./figures/qqPlots/qprLN.png  used on input line 518.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
  [10 <./figures/qqPlots/rnnGood.png> <./figures/qqPlots/rnnBad.png> <./figures/qqPlots/mlrLN.png> <./figures/qqPlots/qprLN.png>]
-<./figures/qqPlots/fnnLN.png, id=118, 462.528pt x 346.896pt>
+<./figures/qqPlots/fnnLN.png, id=119, 462.528pt x 346.896pt>
 File: ./figures/qqPlots/fnnLN.png Graphic file (type png)
 <use ./figures/qqPlots/fnnLN.png>
-Package pdftex.def Info: ./figures/qqPlots/fnnLN.png  used on input line 537.
+Package pdftex.def Info: ./figures/qqPlots/fnnLN.png  used on input line 538.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/qqPlots/lstmLoCapLN.png, id=119, 462.528pt x 346.896pt>
+<./figures/qqPlots/lstmLoCapLN.png, id=120, 462.528pt x 346.896pt>
 File: ./figures/qqPlots/lstmLoCapLN.png Graphic file (type png)
 <use ./figures/qqPlots/lstmLoCapLN.png>
-Package pdftex.def Info: ./figures/qqPlots/lstmLoCapLN.png  used on input line 541.
+Package pdftex.def Info: ./figures/qqPlots/lstmLoCapLN.png  used on input line 542.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/tailMatches/regLN.png, id=120, 462.528pt x 346.896pt>
+<./figures/tailMatches/regLN.png, id=121, 462.528pt x 346.896pt>
 File: ./figures/tailMatches/regLN.png Graphic file (type png)
 <use ./figures/tailMatches/regLN.png>
-Package pdftex.def Info: ./figures/tailMatches/regLN.png  used on input line 570.
+Package pdftex.def Info: ./figures/tailMatches/regLN.png  used on input line 571.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/tailMatches/nnLN.png, id=121, 462.528pt x 346.896pt>
+<./figures/tailMatches/nnLN.png, id=122, 462.528pt x 346.896pt>
 File: ./figures/tailMatches/nnLN.png Graphic file (type png)
 <use ./figures/tailMatches/nnLN.png>
-Package pdftex.def Info: ./figures/tailMatches/nnLN.png  used on input line 574.
+Package pdftex.def Info: ./figures/tailMatches/nnLN.png  used on input line 575.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
  [11 <./figures/qqPlots/fnnLN.png> <./figures/qqPlots/lstmLoCapLN.png>]
-<./figures/CVaR/allLN.png, id=127, 462.528pt x 346.896pt>
+<./figures/CVaR/allLN.png, id=128, 462.528pt x 346.896pt>
 File: ./figures/CVaR/allLN.png Graphic file (type png)
 <use ./figures/CVaR/allLN.png>
-Package pdftex.def Info: ./figures/CVaR/allLN.png  used on input line 597.
+Package pdftex.def Info: ./figures/CVaR/allLN.png  used on input line 598.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/CVaR/zoomedLN.png, id=128, 462.528pt x 346.896pt>
+<./figures/CVaR/zoomedLN.png, id=129, 462.528pt x 346.896pt>
 File: ./figures/CVaR/zoomedLN.png Graphic file (type png)
 <use ./figures/CVaR/zoomedLN.png>
-Package pdftex.def Info: ./figures/CVaR/zoomedLN.png  used on input line 602.
+Package pdftex.def Info: ./figures/CVaR/zoomedLN.png  used on input line 603.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
  [12 <./figures/tailMatches/regLN.png> <./figures/tailMatches/nnLN.png> <./figures/CVaR/allLN.png> <./figures/CVaR/zoomedLN.png>]
-<./figures/qqPlots/lstmAll.png, id=136, 867.24pt x 578.16pt>
+<./figures/qqPlots/lstmAll.png, id=137, 867.24pt x 578.16pt>
 File: ./figures/qqPlots/lstmAll.png Graphic file (type png)
 <use ./figures/qqPlots/lstmAll.png>
-Package pdftex.def Info: ./figures/qqPlots/lstmAll.png  used on input line 664.
+Package pdftex.def Info: ./figures/qqPlots/lstmAll.png  used on input line 665.
 (pdftex.def)             Requested size: 452.9679pt x 301.97705pt.
  [13] [14 <./figures/qqPlots/lstmAll.png>]
-<./figures/singleStage/CVaRlowNoise.png, id=145, 578.16pt x 433.62pt>
+<./figures/singleStage/CVaRlowNoise.png, id=146, 578.16pt x 433.62pt>
 File: ./figures/singleStage/CVaRlowNoise.png Graphic file (type png)
 <use ./figures/singleStage/CVaRlowNoise.png>
-Package pdftex.def Info: ./figures/singleStage/CVaRlowNoise.png  used on input line 761.
+Package pdftex.def Info: ./figures/singleStage/CVaRlowNoise.png  used on input line 762.
 (pdftex.def)             Requested size: 217.42265pt x 163.06363pt.
-<./figures/singleStage/CVaRmediumNoise.png, id=146, 578.16pt x 433.62pt>
+<./figures/singleStage/CVaRmediumNoise.png, id=147, 578.16pt x 433.62pt>
 File: ./figures/singleStage/CVaRmediumNoise.png Graphic file (type png)
 <use ./figures/singleStage/CVaRmediumNoise.png>
-Package pdftex.def Info: ./figures/singleStage/CVaRmediumNoise.png  used on input line 765.
+Package pdftex.def Info: ./figures/singleStage/CVaRmediumNoise.png  used on input line 766.
 (pdftex.def)             Requested size: 217.42265pt x 163.06363pt.
  [15]
-<./figures/singleStage/MSEConvergence_lstmLoCap.png, id=150, 462.528pt x 346.896pt>
+<./figures/singleStage/MSEConvergence_lstmLoCap.png, id=151, 462.528pt x 346.896pt>
 File: ./figures/singleStage/MSEConvergence_lstmLoCap.png Graphic file (type png)
 <use ./figures/singleStage/MSEConvergence_lstmLoCap.png>
-Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmLoCap.png  used on input line 796.
+Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmLoCap.png  used on input line 797.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
-<./figures/singleStage/MSEConvergence_lstmHiCap.png, id=151, 462.528pt x 346.896pt>
+<./figures/singleStage/MSEConvergence_lstmHiCap.png, id=152, 462.528pt x 346.896pt>
 File: ./figures/singleStage/MSEConvergence_lstmHiCap.png Graphic file (type png)
 <use ./figures/singleStage/MSEConvergence_lstmHiCap.png>
-Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmHiCap.png  used on input line 801.
+Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmHiCap.png  used on input line 802.
 (pdftex.def)             Requested size: 217.42265pt x 163.0676pt.
  [16 <./figures/singleStage/CVaRlowNoise.png> <./figures/singleStage/CVaRmediumNoise.png> <./figures/singleStage/MSEConvergence_lstmLoCap.png> <./figures/singleStage/MSEConvergence_lstmHiCap.png>]
-<./figures/singleStage/MSEConvergence_lstmLoCap_MN.png, id=159, 867.24pt x 361.35pt>
+<./figures/singleStage/MSEConvergence_lstmLoCap_MN.png, id=160, 867.24pt x 361.35pt>
 File: ./figures/singleStage/MSEConvergence_lstmLoCap_MN.png Graphic file (type png)
 <use ./figures/singleStage/MSEConvergence_lstmLoCap_MN.png>
-Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmLoCap_MN.png  used on input line 818.
+Package pdftex.def Info: ./figures/singleStage/MSEConvergence_lstmLoCap_MN.png  used on input line 819.
 (pdftex.def)             Requested size: 452.9679pt x 188.73566pt.
  [17 <./figures/singleStage/MSEConvergence_lstmLoCap_MN.png>] [18] (./nnMetamodels.bbl
 Underfull \hbox (badness 4981) in paragraph at lines 38--44
@@ -472,11 +472,11 @@ Here is how much of TeX's memory you used:
  488012 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,15n,77p,567b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on nnMetamodels.pdf (20 pages, 846126 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on nnMetamodels.pdf (20 pages, 854340 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
+ 297 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
