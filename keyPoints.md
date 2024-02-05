@@ -18,7 +18,7 @@
     - Mention the tuning process of the RNN 
 - Neural network is a data-driven method to find basis function
     - Regression has high and unknown model error
-    - The model errors of machine learning metamodels are still unknown, but believedd to be much smaller than regression
+    - The model errors of machine learning metamodels are still unknown, but believed to be much smaller than regression
 
 ## Extra Work
 
