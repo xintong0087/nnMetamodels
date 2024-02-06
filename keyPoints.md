@@ -44,7 +44,6 @@
     - writing
     - result
 - In Figure 7, add the Pearson correlation onto the graphs
-    - writing
     - result
 - In Figure 9 and 10, add the confidence band
     - writing
@@ -52,5 +51,5 @@
 - All the footnotes
     - writing
 - Delete "LoCap" from "Locap LSTM"
-    - writing
+    - $\checkmark$ writing
 
