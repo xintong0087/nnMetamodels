@@ -26,18 +26,31 @@
     - $\checkmark$ writing 
     - result 
 - Fill the test errors for Table 2
-    - Test errors provide practical guidelines to real-world tasks.
-    - train-test split with seed = 22
-- Training/true QQ plot for good/bad RNN
-    - Record the number of epochs run for good/bad RNN
+    - $\checkmark$ writing
+    - result
+- Training/true QQ plot for good/bad RNN    
+    - $\checkmark$ writing
+    - result
 - Similar to Table 3: fill experiments for HiCap LSTM
+    - writing
+    - result
     - Fill Table 9 with results from new experiments
-- Add a boxplot for $N = 1$ like Figure 8.
+- Add a boxplot for $N = 1$ like Figure 8.    
+    - writing
+    - result
     - Fill experiments for MLR, QPR, FNN, RNN
     - Different boxes with different colors
 - In Figure 5, refer to Jessica's result for GMMB/GMAB
+    - writing
+    - result
 - In Figure 7, add the Pearson correlation onto the graphs
+    - writing
+    - result
 - In Figure 9 and 10, add the confidence band
+    - writing
+    - result
 - All the footnotes
+    - writing
 - Delete "LoCap" from "Locap LSTM"
+    - writing
 
