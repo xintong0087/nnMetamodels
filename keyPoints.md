@@ -23,6 +23,8 @@
 ## Extra Work
 
 - Add RNN* to Table 1
+    - $\checkmark$ writing 
+    - result 
 - Fill the test errors for Table 2
     - Test errors provide practical guidelines to real-world tasks.
     - train-test split with seed = 22
