@@ -584,7 +584,9 @@ In a two-stage procedure, metamodels' overall prediction errors measured by the 
 Figure~\ref{fig:tailMatches} depicts the average percentage of correctly identified true tail scenarios\footnote{Each quantity is averaged over 50 macro replications.}  by different metamodels for different safety margins.
 The percentage of tail matches of the traditional regression metamodels are significantly lower than the ones of the neural networks.
 We see that a poor metamodel like the QPR identifies less than 40\% of the true tail scenario without any safety margin.
-In contrast, a good metamodel like the LSTM identifies more than 75\% of the true tail scenarios without any safety margin and more than the QPR metamodel does with 15\% of safety margin.
+In contrast, a good metamodel like the LSTM identifies more than 75\% of the true tail scenarios without any safety margin and more than the QPR metamodel does with 15\% of safety margin\footnote{The metamodel in~\cite{dang2020efficient} identifies 100\% of the true tail scenarios on with a 10\% safety margin for a GMAB contract.
+The GMAB contract is simpler than the GMWB contract, and the true tail scenarios are easier to identify. 
+For a GMAB, our LSTM metamodel identifies 100\% of the true tail scenarios with a 2.5\% safety margin}.
 The RNN metamodel suffers from the vanishing gradient problem during training. 
 For some macro replications (as shown in Figure~\ref{subfig:badRNN}), the RNN metamodels' predictions are far from the true losses, especially on the tails.
 The FNN metamodel has a better fit than the regression metamodels, but it does not have the same level of accuracy as the LSTM metamodel, which is a specialized network to capture the sequential structure of our time-series features.
@@ -920,5 +922,24 @@ The versatility of neural networks could unlock new insights across a broad spec
     \caption{CVaR estimates with low noise training labels ($N=100$)}
 \end{figure}
 
+\subsection{Black Scholes Results for a GMAB Contract}
+
+In~\cite{dang2020efficient}, the authors propose a two-stage nested simulation procedure with a Black Scholes metamodel to estimate the 95\%-CVaR of the hedging loss of a GMAB contract.
+
+\begin{table}[ht!]
+    \small
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Safety Margin}                  & Percentage of Matches \\
+        \midrule
+        $0\%$   & 0.57 \\
+        $5\%$   & 0.89  \\
+        $10\%$  & 0.92 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Percenatage of correctly identified true tails for a GMAB contract in~\cite{dang2020efficient}}
+    \label{tab:jessica}
+\end{table}
 
 \end{document}
