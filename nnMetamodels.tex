@@ -462,14 +462,15 @@ In machine-learning terminologies, the three deep neural network models have muc
         MLR     & N/A                       & 241          & $0.707 (\pm0.001)$ & $0.691 (\pm0.003)$ & $0.694 (\pm0.001)$ \\
         QPR     & N/A                       & 481          & $0.544 (\pm0.001)$ & $0.544 (\pm0.003)$ & $0.530 (\pm0.001)$ \\
         FNN     & $240, 128, 16$            & $35\!,\!009$ & $0.118 (\pm0.010)$ & $0.291 (\pm0.006)$ & $0.113 (\pm0.009)$ \\
-        RNN     & $(240, 32), (240, 4), 32$ & $32\!,\!021$ & $0.152 (\pm0.063)$ & $0.167 (\pm0.067)$ & $0.150 (\pm0.063)$ \\
+        RNN     & $(240, 32), (240, 4), 32$ & $32\!,\!021$ & $0.152 (\pm0.063)$ & $0.170 (\pm0.067)$ & $0.150 (\pm0.063)$ \\
         LSTM    & $(240, 32), (240, 4), 32$ & $35\!,\!729$ & $0.082 (\pm0.006)$ & $0.093 (\pm0.006)$ & $0.070 (\pm0.006)$ \\
-        RNN$^*$ & $(240, 32), (240, 4), 32$ & $32\!,\!021$ & $0.152 (\pm0.063)$ & $0.167 (\pm0.067)$ & $0.150 (\pm0.063)$ \\
+        RNN$^*$ \footnotemark & $(240, 32), (240, 4), 32$ & $32\!,\!021$ & $0.109 (\pm0.010)$ & $0.143 (\pm0.013)$ & $0.100 (\pm0.010)$ \\
         \bottomrule
     \end{tabular}
     \caption{Architectures and MSEs of metamodels for GMWB inner simulation model.}
     \label{tab:gmwb_arch}
 \end{table}
+\footnotetext{Results of the well-trained RNN, where the ones suffers from the vanishing gradient issue are removed from the averages.}
 
 For each metamodel, 50 independent macro replications are run\footnote{Each macro replication includes simulating a noisy dataset, separating it into training and test data, fitting a metamodel, and making predictions}.
 The last three columns in Table~\ref{tab:gmwb_arch} display the average squared errors between the predicted losses and the losses (labels) in different datasets.
@@ -483,9 +484,10 @@ As a result, they have lower training errors, i.e., they fit the data better, an
 Notably, the true errors for the deep neural network metamodels are lower than the test errors.
 Comparing the two metamodels with recurrent structures, A LSTM network overcomes two key drawbacks of a crude RNN.
 \begin{enumerate}
-    \item It avoids the vanishing gradient problem during training, which makes the LSTM easier to than the RNN. Figure~\ref{fig:QQ_RNN} shows the quantile-quantile (QQ) plots between the \textbf{training} labels and the RNN predictions for two macro replications, where training of the latter is hindered by the vanishing gradient problem\footnote{A well-trained RNN stops early at around 300 training epochs, while an ill-trained RNN uses up all 1000 training epochs.}. As a result, the half length of the 95\% confidence interval of the RNN's training error is much larger than all other metamodels. The last row of Table~\ref{tab:gmwb_arch} shows the average squared errors of the good RNN metamodels that are successfully trained.
+    \item It avoids the vanishing gradient problem during training, which makes the LSTM easier to than the RNN. Figure~\ref{fig:QQ_RNN} shows the quantile-quantile (QQ) plots between the \textbf{training} labels and the RNN predictions for two macro replications, where training of the latter is hindered by the vanishing gradient problem\footnote{A well-trained RNN stops early at around 300 training epochs, while an ill-trained RNN uses up all 1000 training epochs.}. As a result, the half length of the 95\% confidence interval of the RNN's training error is much larger than all other metamodels. The last row of Table~\ref{tab:gmwb_arch} shows the average squared errors of the good RNN metamodels that are successfully trained. Removing the RNN metamodels that are ill-trained, the average squared errors of the RNN metamodels are lower than those of the FNN, but the half lengths of their 95\% confidence intervals are larger than those of the FNN. This suggests that the RNN is more sensitive to noise in stochastic gradient descent than the FNN.
     \item A LSTM introduces three gates that regulate the flow of information. These gates decide what information should be kept or discarded. This makes a LSTM more capcable of learning long-term dependencies. Since the feature in our dynamic hedging problem is a 240-dimensional time series, a LSTM is more suitable than a crude RNN.
 \end{enumerate}
+
 
 \begin{figure}[ht!]
     \centering
@@ -498,7 +500,7 @@ Comparing the two metamodels with recurrent structures, A LSTM network overcomes
         \caption{A bad RNN metamodel}
         \label{subfig:badRNN}
     \end{subfigure}
-    \caption{QQ-plots between training labels (x-axis) and predicted losses (y-axis) for the RNN metamodel.} 
+    \caption{QQ-plots between true labels (x-axis) and predicted losses (y-axis) for the RNN metamodel.} 
     \label{fig:QQ_RNN}
 \end{figure}
 
@@ -640,12 +642,12 @@ The two LSTM metamodels has the same number of layers, but their numbers of hidd
         \toprule
         \textbf{Model}      & \textbf{Noise level of training labels}   & \textbf{Training error}   & \textbf{Test error}   & \textbf{True error}\\
         \midrule
-        LSTM                & $N=100$                                   & $0.082 (\pm0.004)$        &                       & $0.070 (\pm0.004)$ \\ 
-        High-capacity LSTM  & $N=100$                                   & $0.048 (\pm0.002)$        &                       & $0.060 (\pm0.002)$ \\
-        LSTM                & $N=10$                                    & $0.195 (\pm0.001)$        &                       & $0.070 (\pm0.001)$ \\
-        High-capacity LSTM  & $N=10$                                    & $0.157 (\pm0.002)$        &                       & $0.065 (\pm0.001)$ \\
-        LSTM                & $N=1$                                     & $1.366 (\pm0.006)$        &                       & $0.129 (\pm0.002)$ \\
-        High-capacityLSTM   & $N=1$                                     & $0.977 (\pm0.026)$        &                       & $0.378 (\pm0.017)$ \\
+        LSTM                & $N=100$                                   & $0.082 (\pm0.004)$        & $0.079(\pm0.005)$     & $0.070 (\pm0.004)$ \\ 
+        High-capacity LSTM  & $N=100$                                   & $0.048 (\pm0.002)$        & $0.070(\pm0.003)$     & $0.060 (\pm0.002)$ \\
+        LSTM                & $N=10$                                    & $0.195 (\pm0.001)$        & $0.193(\pm0.001)$     & $0.070 (\pm0.001)$ \\
+        High-capacity LSTM  & $N=10$                                    & $0.157 (\pm0.002)$        & $0.199(\pm0.002)$     & $0.065 (\pm0.001)$ \\
+        LSTM                & $N=1$                                     & $1.366 (\pm0.006)$        & $0.781(\pm0.005)$     & $0.129 (\pm0.002)$ \\
+        High-capacityLSTM   & $N=1$                                     & $0.977 (\pm0.026)$        & $0.915(\pm0.008)$     & $0.378 (\pm0.017)$ \\
         \bottomrule
     \end{tabular}
     \caption{Architectures and MSEs of LSTM metamodels.}
@@ -681,6 +683,7 @@ Hence, domain knowledge about the right architecture for the task and knowledge 
 
 With more details, the QQ-plots depicted in Figure~\ref{fig:QQ_All} illustrates the fit of the two LSTM metamodels when different noise levels are present in the training labels.
 They are arranged in a 2-by-3 grid, where the two rows correspond to the two LSTM metamodels, and the three columns correspond to the three noise levels.
+The Pearson correlation coefficient between the true losses and the predicted losses is labeled in each subplot.
 The sparsity of the plot increases as we move from left to right, indicating that the noise level in the training labels increases.
 There are two key findings.
 \begin{enumerate}
@@ -711,10 +714,28 @@ The number of outer scenarios corresponds to the number of feature-label pairs (
     \label{tab:lstm_sens}
 \end{table}
 
-Table~\ref{tab:lstm_sens} shows the average squared errors between the regular LSTM predictions and the true losses for various combinations of $M$ and $N$.
+\begin{table}[ht!]
+    \small
+    \centering
+    \begin{tabular}{lccccc}
+        \toprule
+                          & $N=1\!,\!000$ & $N=100$       & $N=10$        & $N=1$ \\
+        \midrule
+        $M = 100$         & $0.046$ & $0.062$ & $0.123$ & $0.754$ \\
+        $M = 1\!,\!000$   & $0.051$ & $0.057$ & $0.147$ & $0.696$ \\
+        $M = 10\!,\!000$  & $0.041$ & $0.037$ & $0.103$ & $0$ \\
+        $M = 100\!,\!000$ & $0.034$ & $0.039$ & $0.063$ & $0.321$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{MSE between high-capacity LSTM predicted losses and true losses.}
+    \label{tab:hicaplstm_sens}
+\end{table}
+
+Table~\ref{tab:lstm_sens} and~\ref{tab:hicaplstm_sens} show the average squared errors between the LSTM predictions and the true losses for various combinations of $M$ and $N$.
 The 4th row of Table~\ref{tab:lstm_sens} shows the performance of the regular LSTM metamodel trained with $M=100\!,000$ samples with different noise levels.
-We observe that an increasing $N$ reduces the MSE, but the reduction is not significant for $N$ larger than $10$.
-Another way to interpret the results in Table~\ref{tab:lstm_sens} is to compare the MSEs for the same budget of $\Gamma = M \times N$.
+We observe that an increasing $N$ reduces the MSE, but the reduction is not significant for a regular LSTM when $N$ is larger than $10$.
+For the high-capacity LSTM, the MSE is significantly reduced when $N$ is increased from $1$ to $100$, but the reduction is not significant when $N$ is increased from $100$ to $1\!,000$.
+Another way to interpret the results in Table~\ref{tab:lstm_sens} is to compare the MSEs for the same budget of $\Gamma = M \times N$. 
 Entries on the same diagonal represents the same simulation budget.
 For most budgets, the MSEs are also the lowest when $N = 10$.
 The results in Table~\ref{tab:lstm_sens} suggest that the performance of the LSTM metamodel is more sensitive to the number of outer scenarios than the number of inner replications.
@@ -771,12 +792,12 @@ The only difference from Section~\ref{subsec:twoStageProcedure} is that the meta
 \begin{figure}[ht!]
     \centering
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\textwidth]{./figures/singleStage/CVaRlowNoise.png}
-        \caption{With low noise training labels ($N=100$)}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.48\textwidth}
         \includegraphics[width=\textwidth]{./figures/singleStage/CVaRmediumNoise.png}
         \caption{With medium noise training labels ($N=10$)}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./figures/singleStage/CVaRhighNoise.png}
+        \caption{With high noise training labels ($N=1$)}
     \end{subfigure}
     \caption{CVaR estimates of the single-stage procedure with metamodels.}
     \label{fig:CVaRsingleStage}
@@ -874,6 +895,30 @@ The versatility of neural networks could unlock new insights across a broad spec
 \footnotesize
 \bibliography{refP2}
 
+\newpage
+\appendix
+\section{Appendix}
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./figures/qqPlots/rnnGood_training.png}
+        \caption{A good RNN metamodel}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./figures/qqPlots/rnnBad_training.png}
+        \caption{A bad RNN metamodel}
+        \label{subfig:badRNN_training}
+    \end{subfigure}
+    \caption{QQ-plots between training labels (x-axis) and predicted losses (y-axis) for the RNN metamodel.} 
+    \label{fig:QQ_RNN_training}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\textwidth]{./figures/singleStage/CVaRlowNoise.png}
+    \caption{CVaR estimates with low noise training labels ($N=100$)}
+\end{figure}
 
 
 \end{document}

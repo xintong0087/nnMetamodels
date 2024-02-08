@@ -24,17 +24,17 @@
 
 - Add RNN* to Table 1
     - $\checkmark$ writing 
-    - result 
+    - $\checkmark$ result 
 - Fill the test errors for Table 2
     - $\checkmark$ writing
-    - result
+    - $\checkmark$ result
 - Training/true QQ plot for good/bad RNN    
     - $\checkmark$ writing
-    - result
+    - $\checkmark$ result
 - Similar to Table 3: fill experiments for HiCap LSTM
-    - writing
-    - result
-    - Fill Table 9 with results from new experiments
+    - $\checkmark$ writing
+    - $\checkmark$ result
+    - Fill Figure 9 with results from new experiments
 - Add a boxplot for $N = 1$ like Figure 8.    
     - writing
     - result
@@ -44,10 +44,10 @@
     - writing
     - result
 - In Figure 7, add the Pearson correlation onto the graphs
-    - result
+    - $\checkmark$ result
 - In Figure 9 and 10, add the confidence band
-    - writing
-    - result
+    - $\checkmark$ writing
+    - $\checkmark$ result
 - All the footnotes
     - writing
 - Delete "LoCap" from "Locap LSTM"
