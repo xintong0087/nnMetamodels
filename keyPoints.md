@@ -20,7 +20,7 @@
     - Regression has high and unknown model error
     - The model errors of machine learning metamodels are still unknown, but believed to be much smaller than regression
 
-## Extra Work
+## Additional Work
 
 - Add RNN* to Table 1
     - $\checkmark$ writing 
@@ -36,20 +36,17 @@
     - $\checkmark$ result
     - Fill Figure 9 with results from new experiments
 - Add a boxplot for $N = 1$ like Figure 8.    
-    - writing
-    - result
-    - Fill experiments for MLR, QPR, FNN, RNN
-    - Different boxes with different colors
+    - $\checkmark$ writing
+    - $\checkmark$ result
+    - $\checkmark$ Different boxes with different colors
 - In Figure 5, refer to Jessica's result for GMMB/GMAB
-    - writing
-    - result
+    - $\checkmark$ writing
+    - $\checkmark$ result
 - In Figure 7, add the Pearson correlation onto the graphs
     - $\checkmark$ result
 - In Figure 9 and 10, add the confidence band
     - $\checkmark$ writing
     - $\checkmark$ result
-- All the footnotes
-    - writing
 - Delete "LoCap" from "Locap LSTM"
     - $\checkmark$ writing
 
